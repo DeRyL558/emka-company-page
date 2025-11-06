@@ -1,18 +1,156 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eMKa Monika Kogowska</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 40px; }
-        h1 { margin-bottom: 10px; }
-        p { font-size: 18px; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>eMKa Monika Kogowska — Transport i Spedycja</title>
+  <meta name="description" content="Firma transportowo-spedycyjna założona w 2001 roku. Siedziba: Stargard. eMKa Monika Kogowska." />
+  <link rel="icon" href="/favicon.ico">
+  <meta property="og:title" content="eMKa Monika Kogowska" />
+  <meta property="og:description" content="Transport &amp; Spedycja od 2001 roku." />
+  <meta property="og:image" content="assets/logo.png" />
+  <style>
+    :root {
+      --bg: #f8fafc;        /* slate-50 */
+      --card: #ffffff;
+      --text: #0f172a;      /* slate-900 */
+      --muted: #475569;     /* slate-600 */
+      --border: #e2e8f0;    /* slate-200 */
+      --accent: #0ea5e9;    /* sky-500 */
+      --accent-ink: #0c4a6e;/* sky-900 */
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif; line-height: 1.6; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 980px; margin: 0 auto; padding: 24px; }
+    header { display: grid; grid-template-columns: 96px 1fr; gap: 20px; align-items: center; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+    header img { width: 96px; height: auto; display: block; }
+    .brand h1 { margin: 0; font-size: clamp(24px, 4vw, 36px); letter-spacing: 0.3px; }
+    .tagline { margin-top: 6px; color: var(--muted); }
+    .cards { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; margin-top: 16px; }
+    .card { grid-column: span 12; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+    @media (min-width: 800px) {
+      .card.half { grid-column: span 6; }
+    }
+    .section-title { font-size: 18px; margin: 0 0 12px; color: var(--accent-ink); letter-spacing: 0.2px; }
+    .list { margin: 0; padding: 0; list-style: none; }
+    .kv { display: grid; grid-template-columns: 1fr; gap: 10px; }
+    @media (min-width: 600px) {
+      .kv { grid-template-columns: 220px 1fr; }
+    }
+    .kv div { padding: 8px 0; border-bottom: 1px dashed var(--border); }
+    .kv div:last-child { border-bottom: none; }
+    .muted { color: var(--muted); }
+    details { border: 1px solid var(--border); border-radius: 12px; background: #fff; padding: 0; }
+    details > summary { list-style: none; cursor: pointer; padding: 16px 18px; font-weight: 600; display: flex; align-items: center; gap: 10px; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] > summary { border-bottom: 1px solid var(--border); }
+    .chev { transition: transform .25s ease; }
+    details[open] .chev { transform: rotate(90deg); }
+    .contacts { padding: 14px 18px 8px; }
+    .contact { display: grid; grid-template-columns: 1fr; gap: 4px; padding: 12px 0; border-bottom: 1px dashed var(--border); }
+    .contact:last-child { border-bottom: none; }
+    @media (min-width: 640px) {
+      .contact { grid-template-columns: 1.2fr 1fr 1fr; align-items: center; }
+    }
+    .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; background: #e0f2fe; color: #075985; font-size: 12px; font-weight: 600; letter-spacing: 0.2px; }
+    footer { margin: 26px 0 8px; text-align: center; color: var(--muted); font-size: 14px; }
+    .sep { height: 1px; background: var(--border); margin: 20px 0; }
+  </style>
 </head>
 <body>
-    <h1>eMKa Monika Kogowska</h1>
-    <p>Firma transportowa z siedzibą w Stargardzie <br> Adres: 73-110 Żarowo, Diamentowa 11 <br> Adres Korespondencyjny: Gdańska 1, 73-110 Stargard <br> NIP: PL8541677379</p>
-    <p>Dział transportu: <a href="transport.emka@gmail.com">transport.emka@gmail.com</a></p>
+  <div class="container">
+    <header>
+      <img src="assets/logo.png" alt="Logo eMKa">
+      <div class="brand">
+        <h1>eMKa Monika Kogowska</h1>
+        <div class="tagline">Transport &amp; Spedycja — od 2001 roku</div>
+      </div>
+    </header>
+
+    <section class="cards">
+      <div class="card half">
+        <h2 class="section-title">O firmie</h2>
+        <p>Firma transportowo-spedycyjna założona w 2001 roku z siedzibą w Stargardzie.</p>
+      </div>
+      <div class="card half">
+        <h2 class="section-title">Dane rejestrowe</h2>
+        <div class="kv">
+          <div><strong>Nazwa</strong></div><div>eMKa Monika Kogowska</div>
+          <div><strong>NIP</strong></div><div>8541677379</div>
+          <div><strong>Siedziba</strong></div><div>Stargard</div>
+        </div>
+      </div>
+
+      <div class="card half">
+        <h2 class="section-title">Adres</h2>
+        <p>
+          <strong>Diamentowa 11</strong><br/>
+          73-110 Żarowo
+        </p>
+      </div>
+      <div class="card half">
+        <h2 class="section-title">Adres korespondencyjny</h2>
+        <p>
+          <strong>Gdańska 1</strong><br/>
+          73-110 Stargard
+        </p>
+      </div>
+
+      <div class="card" style="grid-column: span 12;">
+        <details>
+          <summary>
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Kontakt do pracowników</span>
+          </summary>
+          <div class="contacts">
+
+            <!-- WZÓR: Zmień dane poniżej na właściwe (imię, rola, e-mail i telefon). 
+                 Możesz dodać/usuwać bloki .contact według potrzeb. -->
+
+            <div class="contact">
+              <div><strong>Imię Nazwisko</strong> <span class="pill">Spedycja / Transport</span></div>
+              <div><a href="mailto:imie.nazwisko@emka-ts.eu">imie.nazwisko@emka-ts.eu</a></div>
+              <div><a href="tel:+48XXXXXXXXX">+48 XXX XXX XXX</a></div>
+            </div>
+
+            <div class="contact">
+              <div><strong>Imię Nazwisko</strong> <span class="pill">Spedycja</span></div>
+              <div><a href="mailto:imie.nazwisko@emka-ts.eu">imie.nazwisko@emka-ts.eu</a></div>
+              <div><a href="tel:+48XXXXXXXXX">+48 XXX XXX XXX</a></div>
+            </div>
+
+            <div class="contact">
+              <div><strong>Imię Nazwisko</strong> <span class="pill">Transport</span></div>
+              <div><a href="mailto:imie.nazwisko@emka-ts.eu">imie.nazwisko@emka-ts.eu</a></div>
+              <div><a href="tel:+48XXXXXXXXX">+48 XXX XXX XXX</a></div>
+            </div>
+
+            <div class="contact">
+              <div><strong>Imię Nazwisko</strong> <span class="pill">Obsługa klienta</span></div>
+              <div><a href="mailto:imie.nazwisko@emka-ts.eu">imie.nazwisko@emka-ts.eu</a></div>
+              <div><a href="tel:+48XXXXXXXXX">+48 XXX XXX XXX</a></div>
+            </div>
+
+            <div class="sep"></div>
+
+            <div class="contact">
+              <div><strong>Księgowość</strong> <span class="pill">Faktury i płatności</span></div>
+              <div><a href="mailto:faktury@emka-ts.eu">faktury@emka-ts.eu</a></div>
+              <div><a href="tel:+48XXXXXXXXX">+48 XXX XXX XXX</a></div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 eMKa Monika Kogowska • emka-ts.eu
+    </footer>
+  </div>
 </body>
 </html>
