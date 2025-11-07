@@ -1,73 +1,175 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" data-theme="auto">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>eMKa Monika Kogowska — Transport i Spedycja</title>
-  <meta name="description" content="Firma transportowo-spedycyjna założona w 2001 roku. Siedziba: Stargard. eMKa Monika Kogowska." />
+  <meta name="description" content="Firma transportowo-spedycyjna założona w 2001 roku z siedzibą w Stargardzie. eMKa Monika Kogowska." />
   <link rel="icon" href="favicon.ico">
   <meta property="og:title" content="eMKa Monika Kogowska" />
-  <meta property="og:description" content="Transport &amp; Spedycja od 2001 roku." />
+  <meta property="og:description" content="Transport &amp; Spedycja — od 2001 roku." />
   <meta property="og:image" content="assets/logo.png" />
   <style>
+    /* ===== THEME TOKENS (Cashmere + Gold) ===== */
     :root {
-      --bg: #f8fafc;        /* slate-50 */
+      --bg: #f7f4ef;
       --card: #ffffff;
-      --text: #0f172a;      /* slate-900 */
-      --muted: #475569;     /* slate-600 */
-      --border: #e2e8f0;    /* slate-200 */
-      --accent: #0ea5e9;    /* sky-500 */
-      --accent-ink: #0c4a6e;/* sky-900 */
-      --radius: 16px;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e8e3db;
+      --gold: #c8a24a;
+      --gold-deep: #8f6e1d;
+      --radius: 18px;
+      --radius-sm: 14px;
+      --shadow: 0 6px 20px rgba(17, 24, 39, .08);
+      --logo-src: url('assets/logo.png');
+      --link: var(--gold-deep);
     }
+    @media (prefers-color-scheme: dark) {
+      :root[data-theme="auto"], :root[data-theme="dark"] {
+        --bg: #121417;
+        --card: #181b20;
+        --text: #f3f4f6;
+        --muted: #9aa4b2;
+        --border: #2a2f36;
+        --gold: #d3b15a;
+        --gold-deep: #bf9530;
+        --shadow: 0 8px 24px rgba(0,0,0,.35);
+        --logo-src: url('assets/logo-dark.png');
+        --link: #e9c56f;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #121417;
+      --card: #181b20;
+      --text: #f3f4f6;
+      --muted: #9aa4b2;
+      --border: #2a2f36;
+      --gold: #d3b15a;
+      --gold-deep: #bf9530;
+      --shadow: 0 8px 24px rgba(0,0,0,.35);
+      --logo-src: url('assets/logo-dark.png');
+      --link: #e9c56f;
+    }
+    :root[data-theme="light"] {
+      --bg: #f7f4ef;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e8e3db;
+      --gold: #c8a24a;
+      --gold-deep: #8f6e1d;
+      --shadow: 0 6px 20px rgba(17, 24, 39, .08);
+      --logo-src: url('assets/logo.png');
+      --link: var(--gold-deep);
+    }
+
     * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif; line-height: 1.6; }
-    a { color: var(--accent); text-decoration: none; }
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .container { max-width: 980px; margin: 0 auto; padding: 24px; }
-    header { display: grid; grid-template-columns: 96px 1fr; gap: 20px; align-items: center; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
-    header img { width: 96px; height: auto; display: block; }
-    .brand h1 { margin: 0; font-size: clamp(24px, 4vw, 36px); letter-spacing: 0.3px; }
-    .tagline { margin-top: 6px; color: var(--muted); }
-    .cards { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; margin-top: 16px; }
-    .card { grid-column: span 12; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
-    @media (min-width: 800px) {
-      .card.half { grid-column: span 6; }
+    .container { max-width: 980px; margin: 0 auto; padding: 28px 20px 40px; }
+
+    /* ===== Header ===== */
+    header.hero {
+      background: var(--card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      padding: 20px 20px;
+      display: grid; grid-template-columns: 120px 1fr auto; gap: 18px; align-items: center;
     }
-    .section-title { font-size: 18px; margin: 0 0 12px; color: var(--accent-ink); letter-spacing: 0.2px; }
-    .list { margin: 0; padding: 0; list-style: none; }
+    .logo-img { width: 120px; height: 120px; background-image: var(--logo-src); background-size: contain; background-repeat: no-repeat; background-position: center; }
+    .brand h1 { margin: 0; font-size: clamp(26px, 4.2vw, 40px); letter-spacing: .3px; }
+    .tagline { margin-top: 6px; color: var(--muted); font-size: 15px; }
+    .gold-rule { height: 3px; background: linear-gradient(90deg, rgba(200,162,74,.85), rgba(200,162,74,.35) 50%, rgba(200,162,74,.85)); border-radius: 2px; margin-top: 12px; }
+
+    /* Compact theme toggle (icon button) */
+    .theme-toggle {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px; border-radius: 50%;
+      border: 1px solid var(--border); background: var(--card); color: var(--text);
+      box-shadow: var(--shadow); cursor: pointer;
+    }
+    .theme-toggle:hover { filter: brightness(1.05); }
+    .theme-toggle svg { width: 18px; height: 18px; }
+
+    /* ===== Cards Grid ===== */
+    .cards { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; margin-top: 18px; }
+    .card { grid-column: span 12; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 20px; box-shadow: var(--shadow); }
+    @media (min-width: 860px) { .card.half { grid-column: span 6; } }
+    .section-title { font-size: 18px; margin: 0 0 12px; color: var(--gold-deep); letter-spacing: .25px; display: inline-flex; align-items: center; gap: 10px; }
+    .section-title::after { content: ""; display: inline-block; width: 54px; height: 2px; background: linear-gradient(90deg, var(--gold), transparent); opacity: .9; border-radius: 1px; }
+
     .kv { display: grid; grid-template-columns: 1fr; gap: 10px; }
-    @media (min-width: 600px) {
-      .kv { grid-template-columns: 220px 1fr; }
-    }
-    .kv div { padding: 8px 0; border-bottom: 1px dashed var(--border); }
+    @media (min-width: 600px) { .kv { grid-template-columns: 220px 1fr; } }
+    .kv div { padding: 8px 0; border-bottom: 1px dashed #ece6da; }
     .kv div:last-child { border-bottom: none; }
     .muted { color: var(--muted); }
-    details { border: 1px solid var(--border); border-radius: 12px; background: #fff; padding: 0; }
-    details > summary { list-style: none; cursor: pointer; padding: 16px 18px; font-weight: 600; display: flex; align-items: center; gap: 10px; }
+
+    /* ===== Accordion / Contacts ===== */
+    details { border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--card); box-shadow: var(--shadow); }
+    details > summary { list-style: none; cursor: pointer; padding: 16px 18px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
     details > summary::-webkit-details-marker { display: none; }
     details[open] > summary { border-bottom: 1px solid var(--border); }
     .chev { transition: transform .25s ease; }
     details[open] .chev { transform: rotate(90deg); }
+
     .contacts { padding: 14px 18px 8px; }
-    .contact { display: grid; grid-template-columns: 1fr; gap: 4px; padding: 12px 0; border-bottom: 1px dashed var(--border); }
+    .contact { display: grid; grid-template-columns: 1fr; gap: 6px; padding: 14px 0; border-bottom: 1px dashed #ece6da; }
     .contact:last-child { border-bottom: none; }
-    @media (min-width: 640px) {
-      .contact { grid-template-columns: 1.2fr 1fr 1fr; align-items: center; }
-    }
-    .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; background: #e0f2fe; color: #075985; font-size: 12px; font-weight: 600; letter-spacing: 0.2px; }
-    footer { margin: 26px 0 8px; text-align: center; color: var(--muted); font-size: 14px; }
-    .sep { height: 1px; background: var(--border); margin: 20px 0; }
+    @media (min-width: 680px) { .contact { grid-template-columns: 1.2fr 1fr 1fr; align-items: center; } }
+    .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; background: #fbf6ec; color: #7a5a12; font-size: 12px; font-weight: 700; letter-spacing: .25px; border: 1px solid #efd9a6; }
+    .sep { height: 1px; background: #efe9dd; margin: 14px 0; }
+
+    footer { margin: 28px 0 8px; text-align: center; color: var(--muted); font-size: 14px; }
   </style>
+  <script>
+    // Init theme from localStorage or system preference
+    (function() {
+      const saved = localStorage.getItem('theme');
+      const root = document.documentElement;
+      if (saved === 'light' || saved === 'dark') { root.setAttribute('data-theme', saved); }
+      else { root.setAttribute('data-theme', 'auto'); }
+    })();
+  </script>
 </head>
 <body>
+  <!-- SVG icons for theme toggle -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <circle cx="12" cy="12" r="4" stroke-width="1.8"/>
+      <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-width="1.8"/>
+    </symbol>
+    <symbol id="i-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <path d="M3 12h18" stroke-width="1.8"/>
+      <circle cx="12" cy="12" r="9" stroke-width="1.8"/>
+      <path d="M12 3a9 9 0 0 1 0 18" stroke-width="1.8"/>
+    </symbol>
+  </svg>
+
   <div class="container">
-    <header>
-      <img src="assets/logo.png" alt="Logo eMKa">
+    <header class="hero">
+      <div class="logo-img" aria-label="Logo eMKa"></div>
       <div class="brand">
         <h1>eMKa Monika Kogowska</h1>
         <div class="tagline">Transport &amp; Spedycja — od 2001 roku</div>
+        <div class="gold-rule" aria-hidden="true"></div>
       </div>
+      <button class="theme-toggle" id="themeBtn" type="button" title="Motyw: Auto" aria-label="Przełącz motyw">
+        <svg><use href="#i-auto"/></svg>
+      </button>
     </header>
 
     <section class="cards">
@@ -147,5 +249,33 @@
       © 2025 eMKa Monika Kogowska • emka-ts.eu
     </footer>
   </div>
+
+  <script>
+    // Compact three-state theme button: Auto → Light → Dark
+    const root = document.documentElement;
+    const btn  = document.getElementById('themeBtn');
+    const modes = ['auto','light','dark'];
+    const icons = { auto: '#i-auto', light: '#i-sun', dark: '#i-moon' };
+    function setTheme(mode) {
+      root.setAttribute('data-theme', mode);
+      localStorage.setItem('theme', mode === 'auto' ? '' : mode);
+      const use = btn.querySelector('use');
+      use.setAttribute('href', icons[mode]);
+      btn.title = 'Motyw: ' + (mode === 'auto' ? 'Auto' : mode === 'light' ? 'Jasny' : 'Ciemny');
+    }
+    (function init() {
+      const saved = localStorage.getItem('theme');
+      let mode = 'auto';
+      if (saved === 'light') mode = 'light';
+      if (saved === 'dark')  mode = 'dark';
+      setTheme(mode);
+      btn.addEventListener('click', () => {
+        const current = root.getAttribute('data-theme') || 'auto';
+        const idx = modes.indexOf(current);
+        const next = modes[(idx + 1) % modes.length];
+        setTheme(next);
+      });
+    })();
+  </script>
 </body>
 </html>
