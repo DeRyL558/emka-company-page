@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" data-theme="auto">
+<html lang="pl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,7 +10,6 @@
   <meta property="og:description" content="Transport &amp; Spedycja — od 2001 roku." />
   <meta property="og:image" content="assets/logo.png" />
   <style>
-    /* ===== THEME TOKENS (Cashmere + Gold) ===== */
     :root {
       --bg: #f7f4ef;
       --card: #ffffff;
@@ -25,20 +24,6 @@
       --logo-src: url('assets/logo.png');
       --link: var(--gold-deep);
     }
-    @media (prefers-color-scheme: dark) {
-      :root[data-theme="auto"], :root[data-theme="dark"] {
-        --bg: #121417;
-        --card: #181b20;
-        --text: #f3f4f6;
-        --muted: #9aa4b2;
-        --border: #2a2f36;
-        --gold: #d3b15a;
-        --gold-deep: #bf9530;
-        --shadow: 0 8px 24px rgba(0,0,0,.35);
-        --logo-src: url('assets/logo-dark.png');
-        --link: #e9c56f;
-      }
-    }
     :root[data-theme="dark"] {
       --bg: #121417;
       --card: #181b20;
@@ -51,20 +36,12 @@
       --logo-src: url('assets/logo-dark.png');
       --link: #e9c56f;
     }
-    :root[data-theme="light"] {
-      --bg: #f7f4ef;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --border: #e8e3db;
-      --gold: #c8a24a;
-      --gold-deep: #8f6e1d;
-      --shadow: 0 6px 20px rgba(17, 24, 39, .08);
-      --logo-src: url('assets/logo.png');
-      --link: var(--gold-deep);
-    }
-
+    :root { color-scheme: light; }
+    :root[data-theme="dark"] { color-scheme: dark; }
     * { box-sizing: border-box; }
+    @media (prefers-reduced-motion: no-preference) {
+    html { transition: background-color .15s ease, color .15s ease; }
+    }
     html, body {
       margin: 0; padding: 0;
       background: var(--bg);
@@ -77,8 +54,7 @@
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .container { max-width: 980px; margin: 0 auto; padding: 28px 20px 40px; }
-
-    /* ===== Header ===== */
+    
     header.hero {
       background: var(--card);
       border: 1px solid var(--border);
@@ -92,7 +68,6 @@
     .tagline { margin-top: 6px; color: var(--muted); font-size: 15px; }
     .gold-rule { height: 3px; background: linear-gradient(90deg, rgba(200,162,74,.85), rgba(200,162,74,.35) 50%, rgba(200,162,74,.85)); border-radius: 2px; margin-top: 12px; }
 
-    /* Compact theme toggle (icon button) */
     .theme-toggle {
       display: inline-flex; align-items: center; justify-content: center;
       width: 36px; height: 36px; border-radius: 50%;
@@ -101,8 +76,7 @@
     }
     .theme-toggle:hover { filter: brightness(1.05); }
     .theme-toggle svg { width: 18px; height: 18px; }
-
-    /* ===== Cards Grid ===== */
+    
     .cards { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; margin-top: 18px; }
     .card { grid-column: span 12; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 20px; box-shadow: var(--shadow); }
     @media (min-width: 860px) { .card.half { grid-column: span 6; } }
@@ -115,7 +89,6 @@
     .kv div:last-child { border-bottom: none; }
     .muted { color: var(--muted); }
 
-    /* ===== Accordion / Contacts ===== */
     details { border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--card); box-shadow: var(--shadow); }
     details > summary { list-style: none; cursor: pointer; padding: 16px 18px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
     details > summary::-webkit-details-marker { display: none; }
@@ -133,17 +106,17 @@
     footer { margin: 28px 0 8px; text-align: center; color: var(--muted); font-size: 14px; }
   </style>
   <script>
-    // Init theme from localStorage or system preference
-    (function() {
-      const saved = localStorage.getItem('theme');
-      const root = document.documentElement;
-      if (saved === 'light' || saved === 'dark') { root.setAttribute('data-theme', saved); }
-      else { root.setAttribute('data-theme', 'auto'); }
-    })();
+  (function() {
+    const root = document.documentElement;
+    const saved = localStorage.getItem('theme');
+    const mode = (saved === 'light' || saved === 'dark')
+      ? saved
+      : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    root.setAttribute('data-theme', mode);
+  })();
   </script>
 </head>
 <body>
-  <!-- SVG icons for theme toggle -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
     <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor">
       <circle cx="12" cy="12" r="4" stroke-width="1.8"/>
@@ -151,11 +124,6 @@
     </symbol>
     <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-width="1.8"/>
-    </symbol>
-    <symbol id="i-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-      <path d="M3 12h18" stroke-width="1.8"/>
-      <circle cx="12" cy="12" r="9" stroke-width="1.8"/>
-      <path d="M12 3a9 9 0 0 1 0 18" stroke-width="1.8"/>
     </symbol>
   </svg>
 
@@ -167,9 +135,9 @@
         <div class="tagline">Transport &amp; Spedycja — od 2001 roku</div>
         <div class="gold-rule" aria-hidden="true"></div>
       </div>
-      <button class="theme-toggle" id="themeBtn" type="button" title="Motyw: Auto" aria-label="Przełącz motyw">
-        <svg><use href="#i-auto"/></svg>
-      </button>
+        <button class="theme-toggle" id="themeBtn" type="button" aria-label="Przełącz motyw">
+          <svg><use href="#i-sun"/></svg>
+        </button>
     </header>
 
     <section class="cards">
@@ -251,31 +219,36 @@
   </div>
 
   <script>
-    // Compact three-state theme button: Auto → Light → Dark
-    const root = document.documentElement;
-    const btn  = document.getElementById('themeBtn');
-    const modes = ['auto','light','dark'];
-    const icons = { auto: '#i-auto', light: '#i-sun', dark: '#i-moon' };
-    function setTheme(mode) {
-      root.setAttribute('data-theme', mode);
-      localStorage.setItem('theme', mode === 'auto' ? '' : mode);
-      const use = btn.querySelector('use');
-      use.setAttribute('href', icons[mode]);
-      btn.title = 'Motyw: ' + (mode === 'auto' ? 'Auto' : mode === 'light' ? 'Jasny' : 'Ciemny');
+  const root = document.documentElement;
+  const btn  = document.getElementById('themeBtn');
+
+  function initialTheme() {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'light' || saved === 'dark') return saved;
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark' : 'light';
+  }
+
+  function applyTheme(mode) {
+    if (mode === 'dark') {
+      root.setAttribute('data-theme', 'dark');
+      btn.querySelector('use').setAttribute('href', '#i-moon');
+      btn.title = 'Motyw: Ciemny';
+    } else {
+      root.setAttribute('data-theme', 'light');
+      btn.querySelector('use').setAttribute('href', '#i-sun');
+      btn.title = 'Motyw: Jasny';
     }
-    (function init() {
-      const saved = localStorage.getItem('theme');
-      let mode = 'auto';
-      if (saved === 'light') mode = 'light';
-      if (saved === 'dark')  mode = 'dark';
-      setTheme(mode);
-      btn.addEventListener('click', () => {
-        const current = root.getAttribute('data-theme') || 'auto';
-        const idx = modes.indexOf(current);
-        const next = modes[(idx + 1) % modes.length];
-        setTheme(next);
-      });
-    })();
-  </script>
+  }
+
+  let theme = initialTheme();
+  applyTheme(theme);
+
+  btn.addEventListener('click', () => {
+    theme = (theme === 'light') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+    applyTheme(theme);
+  });
+</script>
 </body>
 </html>
