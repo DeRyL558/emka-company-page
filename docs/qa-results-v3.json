@@ -1348,6 +1348,10 @@
           "status": 200
         },
         {
+          "url": "http://127.0.0.1:8765/iteration2/assets/site.css",
+          "status": 200
+        },
+        {
           "url": "http://127.0.0.1:8765/iteration2/assets/theme.js",
           "status": 200
         },
@@ -1357,10 +1361,6 @@
         },
         {
           "url": "http://127.0.0.1:8765/iteration2/assets/logo-dark.png",
-          "status": 200
-        },
-        {
-          "url": "http://127.0.0.1:8765/iteration2/assets/site.css",
           "status": 200
         }
       ]
@@ -1413,11 +1413,11 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/logo-dark.png",
+          "url": "http://127.0.0.1:8765/iteration2/assets/theme.js",
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/theme.js",
+          "url": "http://127.0.0.1:8765/iteration2/assets/logo-dark.png",
           "status": 200
         }
       ]
@@ -1466,7 +1466,7 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/theme.js",
+          "url": "http://127.0.0.1:8765/iteration2/assets/logo-dark.png",
           "status": 200
         },
         {
@@ -1474,7 +1474,7 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/logo-dark.png",
+          "url": "http://127.0.0.1:8765/iteration2/assets/theme.js",
           "status": 200
         }
       ]
@@ -1523,15 +1523,15 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/theme.js",
-          "status": 200
-        },
-        {
           "url": "http://127.0.0.1:8765/iteration2/assets/logo.png",
           "status": 200
         },
         {
           "url": "http://127.0.0.1:8765/iteration2/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration2/assets/theme.js",
           "status": 200
         }
       ]
@@ -1576,11 +1576,11 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/logo.png",
+          "url": "http://127.0.0.1:8765/iteration2/assets/site.css",
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/site.css",
+          "url": "http://127.0.0.1:8765/iteration2/assets/logo.png",
           "status": 200
         },
         {
@@ -1633,11 +1633,11 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/site.css",
+          "url": "http://127.0.0.1:8765/iteration2/assets/logo-dark.png",
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/theme.js",
+          "url": "http://127.0.0.1:8765/iteration2/assets/site.css",
           "status": 200
         },
         {
@@ -1645,7 +1645,7 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/logo-dark.png",
+          "url": "http://127.0.0.1:8765/iteration2/assets/theme.js",
           "status": 200
         }
       ]
@@ -1694,11 +1694,11 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/theme.js",
+          "url": "http://127.0.0.1:8765/iteration2/assets/logo.png",
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/logo.png",
+          "url": "http://127.0.0.1:8765/iteration2/assets/theme.js",
           "status": 200
         },
         {
@@ -1751,11 +1751,11 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/theme.js",
+          "url": "http://127.0.0.1:8765/iteration2/assets/logo.png",
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/logo.png",
+          "url": "http://127.0.0.1:8765/iteration2/assets/theme.js",
           "status": 200
         },
         {
@@ -1808,11 +1808,11 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/logo-dark.png",
+          "url": "http://127.0.0.1:8765/iteration2/assets/logo.png",
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/iteration2/assets/logo.png",
+          "url": "http://127.0.0.1:8765/iteration2/assets/logo-dark.png",
           "status": 200
         },
         {
@@ -1863,11 +1863,11 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
           "status": 200
         },
         {
@@ -1875,11 +1875,11 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
           "status": 200
         }
       ]
@@ -1917,13 +1917,14 @@
         "scroll": 1440,
         "offenders": []
       },
-      "errors": [
-        "Failed to load resource: net::ERR_CONNECTION_RESET",
-        "Failed to load resource: net::ERR_CONNECTION_RESET"
-      ],
+      "errors": [],
       "requests": [
         {
           "url": "http://127.0.0.1:8765/company-page-redesign/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
           "status": 200
         },
         {
@@ -1931,7 +1932,11 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
           "status": 200
         },
         {
@@ -1984,15 +1989,15 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
-          "status": 200
-        },
-        {
           "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
           "status": 200
         },
         {
           "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
           "status": 200
         },
         {
@@ -2045,15 +2050,15 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
-          "status": 200
-        },
-        {
           "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
           "status": 200
         },
         {
           "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
           "status": 200
         },
         {
@@ -2110,11 +2115,11 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
           "status": 200
         },
         {
@@ -2163,7 +2168,7 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
           "status": 200
         },
         {
@@ -2171,11 +2176,11 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
           "status": 200
         },
         {
@@ -2188,6 +2193,67 @@
       "width": 390,
       "height": 844,
       "theme": "light",
+      "initial": {
+        "width": 390,
+        "scroll": 390,
+        "main": true,
+        "contact": {
+          "x": 42.890625,
+          "y": 483.65625,
+          "width": 178.640625,
+          "height": 51.1875,
+          "top": 483.65625,
+          "right": 221.53125,
+          "bottom": 534.84375,
+          "left": 42.890625
+        },
+        "h1": {
+          "x": 19.5,
+          "y": 189.421875,
+          "width": 351,
+          "height": 106.0625,
+          "top": 189.421875,
+          "right": 370.5,
+          "bottom": 295.484375,
+          "left": 19.5
+        }
+      },
+      "overflow": {
+        "scroll": 390,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
       "initial": {
         "width": 390,
         "scroll": 390,
@@ -2246,67 +2312,6 @@
       ]
     },
     {
-      "width": 390,
-      "height": 844,
-      "theme": "dark",
-      "initial": {
-        "width": 390,
-        "scroll": 390,
-        "main": true,
-        "contact": {
-          "x": 42.890625,
-          "y": 483.65625,
-          "width": 178.640625,
-          "height": 51.1875,
-          "top": 483.65625,
-          "right": 221.53125,
-          "bottom": 534.84375,
-          "left": 42.890625
-        },
-        "h1": {
-          "x": 19.5,
-          "y": 189.421875,
-          "width": 351,
-          "height": 106.0625,
-          "top": 189.421875,
-          "right": 370.5,
-          "bottom": 295.484375,
-          "left": 19.5
-        }
-      },
-      "overflow": {
-        "scroll": 390,
-        "offenders": []
-      },
-      "errors": [],
-      "requests": [
-        {
-          "url": "http://127.0.0.1:8765/company-page-redesign/",
-          "status": 200
-        },
-        {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
-          "status": 200
-        },
-        {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
-          "status": 200
-        },
-        {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
-          "status": 200
-        },
-        {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
-          "status": 200
-        },
-        {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
-          "status": 200
-        }
-      ]
-    },
-    {
       "width": 320,
       "height": 844,
       "theme": "light",
@@ -2346,7 +2351,7 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
           "status": 200
         },
         {
@@ -2354,15 +2359,15 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
           "status": 200
         },
         {
           "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
-          "status": 200
-        },
-        {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
           "status": 200
         }
       ]
@@ -2407,7 +2412,7 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
           "status": 200
         },
         {
@@ -2415,15 +2420,15 @@
           "status": 200
         },
         {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
-          "status": 200
-        },
-        {
-          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
-          "status": 200
-        },
-        {
           "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
           "status": 200
         }
       ]
@@ -4672,5 +4677,9 @@
       }
     },
     "browser": "151.0.7922.34"
+  },
+  "captureRerun": {
+    "reason": "Initial after-1440-dark capture had two net::ERR_CONNECTION_RESET errors from the local HTTP server while QA ran concurrently. Source assets were unchanged.",
+    "validation": "Repeated both capture matrices sequentially, required successful decode() for every image and no console/page errors before saving. All 20 page loads passed; manually inspected logo regions of all 46 screenshots."
   }
 }

@@ -53,6 +53,13 @@ HTML Validate 11.16.1 recommended: 0 błędów/ostrzeżeń; wyłączona tylko re
 stylistyczna tel-non-breaking, aby zachować bazowy zapis telefonów.
 CSS Tree 3.2.1, `node --check` obu JS i `git diff --check`: PASS.
 
+Pierwszy zapis 1440 px w ciemnym motywie zawierał przerwane pobranie logo
+(`ERR_CONNECTION_RESET` z lokalnego serwera podczas równoległego QA).
+Powtórzono obie macierze screenshotów sekwencyjnie, wymagając poprawnego
+`decode()` wszystkich obrazów i braku błędów przed zapisem: 20/20 renderów.
+Ręcznie sprawdzono obszar logo we wszystkich 46 screenshotach. Kod i oryginalne
+zasoby nie wymagały zmiany.
+
 ## Dostępność i kontrast
 
 axe-core 4.10.3: **0 violations** w 10 renderach z otwartymi kontaktami
