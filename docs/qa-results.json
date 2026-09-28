@@ -1,0 +1,1700 @@
+{
+  "base": "aff0f14e43a50e2bf190cf6ecd0a60a56db17153",
+  "implementation": "000f50aa031ed79100ff556d13f01ebb0d33e672",
+  "engine": "Chromium 151.0.7922.34",
+  "files": {
+    "index.html": "bff10508a158113782cf8495410d00726cf0e8a9f18484ac132304e7a53640cc",
+    "assets/site.css": "22eabf0be522939629dbb9a65df07e5cbc1c1277635f0bd61a6e92bc1f5ca0ff",
+    "assets/theme.js": "c1f31d4d375781bad25ecd9b13b2c2d5f40f9ebc6162051933d2ddaae5913460"
+  },
+  "checks": [
+    {
+      "name": "10 contact hrefs, visible labels, 6 assignments identical",
+      "detail": [
+        {
+          "name": "Biuro",
+          "department": "Zapytania ogólne",
+          "links": [
+            "mailto:office@emka-ts.eu"
+          ]
+        },
+        {
+          "name": "Paweł Gutowski",
+          "department": "Transport",
+          "links": [
+            "mailto:gutowski.emka@gmail.com",
+            "tel:+48600200513"
+          ]
+        },
+        {
+          "name": "Agnieszka Zielińska",
+          "department": "Transport",
+          "links": [
+            "mailto:a.zielinska@emka-ts.eu",
+            "tel:+48604138909"
+          ]
+        },
+        {
+          "name": "Joanna Zwolińska",
+          "department": "Spedycja",
+          "links": [
+            "mailto:j.zwolinska@emka-ts.eu",
+            "tel:+48505453133"
+          ]
+        },
+        {
+          "name": "Aleksandra Zwolińska",
+          "department": "Spedycja",
+          "links": [
+            "mailto:a.zwolinska@emka-ts.eu",
+            "tel:+48734171987"
+          ]
+        },
+        {
+          "name": "Księgowość",
+          "department": "Faktury / Płatności",
+          "links": [
+            "mailto:accounting@emka-ts.eu"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Company data, two addresses and one h1",
+      "detail": "PASS"
+    },
+    {
+      "name": "axe/layout/targets/logo 1440 light",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 38
+        },
+        "layout": {
+          "w": 1440,
+          "scroll": 1440,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 58.125,
+              "height": 44
+            },
+            {
+              "text": "Dane firmy",
+              "width": 81.484375,
+              "height": 44
+            },
+            {
+              "text": "Ciemny motyw",
+              "width": 137.203125,
+              "height": 44
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 190.5,
+              "height": 51.1875
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 162.15625,
+              "height": 44
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                184,
+                70
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 1440 dark",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 38
+        },
+        "layout": {
+          "w": 1440,
+          "scroll": 1440,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 58.125,
+              "height": 44
+            },
+            {
+              "text": "Dane firmy",
+              "width": 81.484375,
+              "height": 44
+            },
+            {
+              "text": "Ciemny motyw",
+              "width": 137.203125,
+              "height": 44
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 190.5,
+              "height": 51.1875
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 162.15625,
+              "height": 44
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo-dark.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                184,
+                70
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 1280 light",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 38
+        },
+        "layout": {
+          "w": 1280,
+          "scroll": 1280,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 58.125,
+              "height": 44
+            },
+            {
+              "text": "Dane firmy",
+              "width": 81.484375,
+              "height": 44
+            },
+            {
+              "text": "Ciemny motyw",
+              "width": 137.203125,
+              "height": 44
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 190.5,
+              "height": 51.1875
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 162.15625,
+              "height": 44
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                184,
+                70
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 1280 dark",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 38
+        },
+        "layout": {
+          "w": 1280,
+          "scroll": 1280,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 58.125,
+              "height": 44
+            },
+            {
+              "text": "Dane firmy",
+              "width": 81.484375,
+              "height": 44
+            },
+            {
+              "text": "Ciemny motyw",
+              "width": 137.203125,
+              "height": 44
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 190.5,
+              "height": 51.1875
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 162.15625,
+              "height": 44
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo-dark.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                184,
+                70
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 768 light",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 38
+        },
+        "layout": {
+          "w": 768,
+          "scroll": 768,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 58.125,
+              "height": 44
+            },
+            {
+              "text": "Dane firmy",
+              "width": 81.484375,
+              "height": 44
+            },
+            {
+              "text": "Ciemny motyw",
+              "width": 137.203125,
+              "height": 44
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 190.5,
+              "height": 51.1875
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 162.15625,
+              "height": 44
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                184,
+                70
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 768 dark",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 38
+        },
+        "layout": {
+          "w": 768,
+          "scroll": 768,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 58.125,
+              "height": 44
+            },
+            {
+              "text": "Dane firmy",
+              "width": 81.484375,
+              "height": 44
+            },
+            {
+              "text": "Ciemny motyw",
+              "width": 137.203125,
+              "height": 44
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 190.5,
+              "height": 51.1875
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 162.15625,
+              "height": 44
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo-dark.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                184,
+                70
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 390 light",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 38
+        },
+        "layout": {
+          "w": 390,
+          "scroll": 390,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 58.125,
+              "height": 44
+            },
+            {
+              "text": "Dane firmy",
+              "width": 81.484375,
+              "height": 44
+            },
+            {
+              "text": "Ciemny motyw",
+              "width": 117.28125,
+              "height": 44
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 190.5,
+              "height": 51.1875
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 162.15625,
+              "height": 44
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                160,
+                60
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 390 dark",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 38
+        },
+        "layout": {
+          "w": 390,
+          "scroll": 390,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 58.125,
+              "height": 44
+            },
+            {
+              "text": "Dane firmy",
+              "width": 81.484375,
+              "height": 44
+            },
+            {
+              "text": "Ciemny motyw",
+              "width": 117.28125,
+              "height": 44
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 190.5,
+              "height": 51.1875
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 162.15625,
+              "height": 44
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo-dark.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                160,
+                60
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 320 light",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 38
+        },
+        "layout": {
+          "w": 320,
+          "scroll": 320,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 58.125,
+              "height": 44
+            },
+            {
+              "text": "Dane firmy",
+              "width": 81.484375,
+              "height": 44
+            },
+            {
+              "text": "Ciemny motyw",
+              "width": 117.28125,
+              "height": 44
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 190.5,
+              "height": 51.1875
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 162.15625,
+              "height": 44
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                160,
+                60
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 320 dark",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 38
+        },
+        "layout": {
+          "w": 320,
+          "scroll": 320,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 58.125,
+              "height": 44
+            },
+            {
+              "text": "Dane firmy",
+              "width": 81.484375,
+              "height": 44
+            },
+            {
+              "text": "Ciemny motyw",
+              "width": 117.28125,
+              "height": 44
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 190.5,
+              "height": 51.1875
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 162.15625,
+              "height": 44
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 129.75,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo-dark.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                160,
+                60
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "No JS light",
+      "detail": "content, all contacts, system theme, hidden inactive control"
+    },
+    {
+      "name": "No JS dark",
+      "detail": "content, all contacts, system theme, hidden inactive control"
+    },
+    {
+      "name": "Unavailable storage light",
+      "detail": "get blocked; repeated toggles work without errors"
+    },
+    {
+      "name": "Unavailable storage dark",
+      "detail": "get blocked; repeated toggles work without errors"
+    },
+    {
+      "name": "Persisted explicit theme overrides system in both directions",
+      "detail": "PASS"
+    },
+    {
+      "name": "Invalid saved value and live system change",
+      "detail": "PASS"
+    },
+    {
+      "name": "Keyboard Tab order and visible focus",
+      "detail": [
+        {
+          "text": "Przejdź do treści",
+          "tag": "A",
+          "href": "#main",
+          "outline": "3px"
+        },
+        {
+          "text": "Kontakt",
+          "tag": "A",
+          "href": "#kontakt",
+          "outline": "3px"
+        },
+        {
+          "text": "Dane firmy",
+          "tag": "A",
+          "href": "#dane",
+          "outline": "3px"
+        },
+        {
+          "text": "Ciemny motyw",
+          "tag": "BUTTON",
+          "href": null,
+          "outline": "3px"
+        },
+        {
+          "text": "office@emka-ts.eu",
+          "tag": "A",
+          "href": "mailto:office@emka-ts.eu",
+          "outline": "3px"
+        },
+        {
+          "text": "Kontakty do działów ↓",
+          "tag": "A",
+          "href": "#kontakt",
+          "outline": "3px"
+        },
+        {
+          "text": "gutowski.emka@gmail.com",
+          "tag": "A",
+          "href": "mailto:gutowski.emka@gmail.com",
+          "outline": "3px"
+        },
+        {
+          "text": "+48 600 200 513",
+          "tag": "A",
+          "href": "tel:+48600200513",
+          "outline": "3px"
+        },
+        {
+          "text": "a.zielinska@emka-ts.eu",
+          "tag": "A",
+          "href": "mailto:a.zielinska@emka-ts.eu",
+          "outline": "3px"
+        },
+        {
+          "text": "+48 604 138 909",
+          "tag": "A",
+          "href": "tel:+48604138909",
+          "outline": "3px"
+        },
+        {
+          "text": "j.zwolinska@emka-ts.eu",
+          "tag": "A",
+          "href": "mailto:j.zwolinska@emka-ts.eu",
+          "outline": "3px"
+        },
+        {
+          "text": "+48 505 453 133",
+          "tag": "A",
+          "href": "tel:+48505453133",
+          "outline": "3px"
+        },
+        {
+          "text": "a.zwolinska@emka-ts.eu",
+          "tag": "A",
+          "href": "mailto:a.zwolinska@emka-ts.eu",
+          "outline": "3px"
+        },
+        {
+          "text": "+48 734 171 987",
+          "tag": "A",
+          "href": "tel:+48734171987",
+          "outline": "3px"
+        },
+        {
+          "text": "accounting@emka-ts.eu",
+          "tag": "A",
+          "href": "mailto:accounting@emka-ts.eu",
+          "outline": "3px"
+        },
+        {
+          "text": "Przejdź do treści\n  \n    \n      \n      \n    \n    \n      Kontakt\n      Dane firmy\n    \n    Ciemny motyw\n  \n\n  \n    \n      \n        Transport i spedycja od 2001 roku\n        eMKa Monika Kogowska\n        Firma transportowo-spedycyjna z siedzibą w Stargardzie.\n      \n      \n        Biuro\n        Zapytania ogólne\n        office@emka-ts.eu\n        Kontakty do działów ↓\n      \n    \n\n    \n      \n        Kontakt\n        Transport, spedycja i rozliczenia\n      \n      \n        Transport\n        \n          \n            Paweł Gutowski\n            gutowski.emka@gmail.com\n            +48 600 200 513\n          \n          \n            Agnieszka Zielińska\n            a.zielinska@emka-ts.eu\n            +48 604 138 909\n          \n        \n      \n      \n        Spedycja\n        \n          \n            Joanna Zwolińska\n            j.zwolinska@emka-ts.eu\n            +48 505 453 133\n          \n          \n            Aleksandra Zwolińska\n            a.zwolinska@emka-ts.eu\n            +48 734 171 987\n          \n        \n      \n      \n        Księgowość\n        \n          Faktury / Płatności\n          accounting@emka-ts.eu\n        \n      \n    \n\n    \n      \n        Dane firmy\n      \n      \n        \n          Adres\n          Diamentowa 1173-110 Żarowo\n        \n        \n          Adres korespondencyjny\n          Gdańska 173-110 Stargard\n        \n        \n          Dane rejestrowe\n          \n            NazwaeMKa Monika Kogowska\n            NIP8541677379\n            REGON511394302\n          \n        \n      \n    \n  \n  \n    © 2025 eMKa Monika Kogowska\n    emka-ts.eu",
+          "tag": "BODY",
+          "href": null,
+          "outline": "3px"
+        }
+      ]
+    },
+    {
+      "name": "Skip link Enter focuses main; next Tab reaches office",
+      "detail": "PASS"
+    },
+    {
+      "name": "Theme control Space/Enter, focus screenshots",
+      "detail": "PASS"
+    },
+    {
+      "name": "Section navigation",
+      "detail": "PASS; no mail/tel activation"
+    },
+    {
+      "name": "Reduced motion",
+      "detail": "No animations"
+    },
+    {
+      "name": "favicon and absolute Open Graph image paths",
+      "detail": "HTTP 200"
+    }
+  ],
+  "contrast": [
+    {
+      "theme": "light",
+      "colors": {
+        "bg": "rgb(255, 255, 255)",
+        "text": "rgb(32, 34, 36)",
+        "muted": "rgb(96, 99, 101)",
+        "link": "rgb(128, 96, 25)",
+        "control": "rgb(119, 122, 124)",
+        "focus": "#155da8"
+      },
+      "ratios": {
+        "text": 15.96,
+        "muted": 6.05,
+        "link": 5.83,
+        "control": 4.32,
+        "focus": 6.64,
+        "buttonHover": 14.14
+      },
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "span"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+              "html": "<span aria-hidden=\"true\">↓</span>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "colors": {
+        "bg": "rgb(23, 25, 27)",
+        "text": "rgb(240, 240, 237)",
+        "muted": "rgb(177, 180, 182)",
+        "link": "rgb(227, 193, 111)",
+        "control": "rgb(146, 150, 152)",
+        "focus": "#9bc9ff"
+      },
+      "ratios": {
+        "text": 15.44,
+        "muted": 8.46,
+        "link": 10.18,
+        "control": 5.91,
+        "focus": 10.23,
+        "buttonHover": 12.47
+      },
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "span"
+              ],
+              "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+              "html": "<span aria-hidden=\"true\">↓</span>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zoom200": [
+    {
+      "stage": "before",
+      "theme": "light",
+      "metrics": {
+        "width": 640,
+        "height": 450,
+        "outer": 1280,
+        "dpr": 2,
+        "scroll": 640,
+        "contacts": 0
+      }
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "metrics": {
+        "width": 640,
+        "height": 450,
+        "outer": 1280,
+        "dpr": 2,
+        "scroll": 640,
+        "contacts": 10
+      }
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "metrics": {
+        "width": 640,
+        "height": 450,
+        "outer": 1280,
+        "dpr": 2,
+        "scroll": 640,
+        "contacts": 0
+      }
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "metrics": {
+        "width": 640,
+        "height": 450,
+        "outer": 1280,
+        "dpr": 2,
+        "scroll": 640,
+        "contacts": 10
+      }
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "metrics": {
+        "width": 320,
+        "height": 450,
+        "outer": 640,
+        "dpr": 2,
+        "scroll": 361,
+        "contacts": 0
+      }
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "metrics": {
+        "width": 320,
+        "height": 450,
+        "outer": 640,
+        "dpr": 2,
+        "scroll": 320,
+        "contacts": 10
+      }
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "metrics": {
+        "width": 320,
+        "height": 450,
+        "outer": 640,
+        "dpr": 2,
+        "scroll": 361,
+        "contacts": 0
+      }
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "metrics": {
+        "width": 320,
+        "height": 450,
+        "outer": 640,
+        "dpr": 2,
+        "scroll": 320,
+        "contacts": 10
+      }
+    }
+  ],
+  "resources": [
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "errors": [],
+      "requests": [
+        {
+          "url": "/",
+          "status": 200
+        },
+        {
+          "url": "/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/theme.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "errors": [],
+      "requests": [
+        {
+          "url": "/",
+          "status": 200
+        },
+        {
+          "url": "/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo-dark.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "theme": "light",
+      "errors": [],
+      "requests": [
+        {
+          "url": "/",
+          "status": 200
+        },
+        {
+          "url": "/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo-dark.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "theme": "dark",
+      "errors": [],
+      "requests": [
+        {
+          "url": "/",
+          "status": 200
+        },
+        {
+          "url": "/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo-dark.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "errors": [],
+      "requests": [
+        {
+          "url": "/",
+          "status": 200
+        },
+        {
+          "url": "/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/theme.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "errors": [],
+      "requests": [
+        {
+          "url": "/",
+          "status": 200
+        },
+        {
+          "url": "/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/theme.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "errors": [],
+      "requests": [
+        {
+          "url": "/",
+          "status": 200
+        },
+        {
+          "url": "/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo-dark.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "errors": [],
+      "requests": [
+        {
+          "url": "/",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/theme.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "theme": "light",
+      "errors": [],
+      "requests": [
+        {
+          "url": "/",
+          "status": 200
+        },
+        {
+          "url": "/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "theme": "dark",
+      "errors": [],
+      "requests": [
+        {
+          "url": "/",
+          "status": 200
+        },
+        {
+          "url": "/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "/assets/theme.js",
+          "status": 200
+        }
+      ]
+    }
+  ]
+}
