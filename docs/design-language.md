@@ -1,32 +1,69 @@
 # Język wizualny eMKa — strona firmowa
 
-Strona ma ułatwiać rozpoznanie firmy oraz znalezienie właściwego kontaktu.
-Kolejność: znak i nawigacja → nazwa/branża/rok → biuro → kontakty działów →
-adresy i rejestr. Wszystkie kontakty są jawne, również bez JavaScript.
+Strona ma rozpoznawalny charakter firmowej papeterii i czytelnego spisu kontaktów.
+Kolejność: znak i nawigacja → nazwa firmy i branża → biuro → działy → adresy/rejestr.
+Nie budujemy rozbudowanej opowieści marketingowej z kilku danych kontaktowych.
 
-- Używamy niesezonowych `assets/logo.png` i `assets/logo-dark.png`, bez filtrów,
-  kadrowania ani deformacji. Rozmiar obrazu zachowuje proporcję 1812:685.
-- Czerń/biel pochodzą z logo, złoty akcent linków z dotychczasowej strony.
-  Tokeny w `assets/site.css` obejmują tekst, tło, link, separator, kontrolkę
-  i fokus. Jasny: #fff / #202224, link #806019; ciemny: #17191b / #f0f0ed,
-  link #e3c16f. Kolor nie zastępuje podkreślenia ani nazwy działu.
-- Font systemowy, treść 1 rem / 1.6, tytuł 2–2.75 rem, nagłówek sekcji 1.5 rem.
-  Maksymalna szerokość 70 rem; publiczna wizytówka nie przyjmuje gęstości ERP.
-- Główne sekcje oddzielamy odstępem i pojedynczą linią. Osoby są listą pod
-  wspólnym nagłówkiem działu, rejestr jest dl. Nie tworzymy kart w kartach,
-  pigułek, gradientów, cieni ani ozdobnych ilustracji.
-- Siatka składa się zgodnie z DOM; poniżej 42 rem przechodzi w jedną kolumnę.
-  Długie odnośniki mogą się łamać. Nie stosujemy globalnego ukrywania overflow.
-- Linki prowadzą do kontaktu/sekcji; przycisk zmienia motyw. Cele mają min.
-  44 px wysokości. Fokus: obrys 3 px z odstępem 4 px. Jest skip link i main.
-- Przycisk „Ciemny motyw” jest przełącznikiem z aria-pressed. Pamięta ręczny
-  wybór pod istniejącym kluczem `theme`. Bez zapisu działa w bieżącej wizycie;
-  bez JS CSS wybiera motyw systemowy, a nieaktywny przycisk jest ukryty.
-- Bez animacji, zewnętrznych fontów, analityki, osadzeń i zależności runtime.
-- Teksty są konkretne i polskie. Nie dopisujemy usług, zasięgu ani obietnic.
-  „Adres” (Żarowo), „Adres korespondencyjny” (Stargard) i informacja o siedzibie
-  w Stargardzie pozostają oddzielnymi danymi; nie rozstrzygamy ich znaczenia.
+## Kompozycja i typografia
 
-Przy zmianach sprawdzamy oba motywy, 1440/1280/768/390/320 px, klawiaturę,
-200% powiększenia, brak JS i niedostępne localStorage. Audyt automatyczny
-uzupełniamy oceną renderu; nie jest pełnym potwierdzeniem zgodności WCAG.
+- Tytuł branży używa systemowej Georgii: szeryfy łączą go z istniejącym logo.
+  Drugi wiersz jest kursywą. Nazwa eMKa Monika Kogowska pozostaje bezpośrednio
+  nad tytułem, a rok i siedziba pod nim. Nie zmieniamy treści na slogan.
+- Treść i nawigacja: system-ui 1 rem/1.6. Nazwiska 1.1875 rem; numery telefonów
+  mają systemowy krój o stałej szerokości i nie zmieniają zapisu.
+- Szerokość maksymalna 72 rem. Na desktopie wprowadzenie i biuro zajmują
+  wspólny pas; panel kontaktów ma kolumnę tytułu i spis po prawej.
+- Działy są nagłówkami, osoby listą. Krótkie pionowe separatory wiążą nazwisko
+  z jego odnośnikami, poziome rozdzielają działy. Nie otaczamy osób kartami.
+- Dane firmy pozostają na spokojnym tle: dwa adresy, pod nimi pełny rejestr.
+  Na małym ekranie naturalna kolejność DOM przechodzi w jedną kolumnę.
+- Fonty i odstępy używają rem; na telefonie marginesy/padding mają limit vw,
+  aby powiększanie tekstu nie zabierało miejsca na treść. Tytuł i długie adresy
+  mogą się zawijać; nie ukrywamy globalnego overflow.
+
+## Logo i powierzchnie
+
+- Oryginalne niesezonowe logo.png i logo-dark.png, bez kadrowania, deformacji
+  i zmian plików. Proporcja 1812:685. `mix-blend-mode: multiply` w jasnym
+  wariancie wtapia białe tło oryginalnego pliku w powierzchnię strony.
+- Neutralne tło #f1f2ef / #171c19 i powierzchnia kontaktów #fff / #202722
+  porządkują grupy. Ciemny motyw jest zaprojektowany osobno w tych samych rolach.
+- Jeden mocny akcent: złote pole biura #e5c477 z tekstem #30291b (8,57:1).
+  To rozwinięcie złotego akcentu poprzedniej strony, nie nowy kolor marki.
+- Tekst: #232725 / #f0f2ed; pomocniczy #5f6561 / #b8c1b9;
+  linki #775718 / #e5c477. Nie stosujemy cieni, gradientów ani pigułek etykiet.
+  Promień .25 rem służy tylko delikatnemu wykończeniu powierzchni/kontrolki.
+
+## Interakcja i dostępność
+
+- Kontakty są jawne i działają bez JS. Link jest odnośnikiem, przycisk zmienia
+  motyw. Wszystkie główne cele mają min.44×44 px; kontrolka motywu min.48 px.
+- Fokus 3 px, odstęp 4 px. Złote biuro ma własny kolor fokusu #234c7c.
+  Skip link prowadzi do main; nagłówki, listy i dl zachowują strukturę treści.
+- Przycisk „Ciemny motyw” ma stałą nazwę i aria-pressed. CSS obraca dwubarwny
+  symbol o 180° w 260 ms; stan strony zmienia się natychmiast. Szybkie kliknięcia
+  nie są blokowane. Preferencja zostaje pod kluczem `theme`, zapis jest opcjonalny.
+- Animujemy wyłącznie drobne reakcje: podkreślenie nawigacji/tło kontrolki
+  160 ms, symbol 260 ms, strzałka linku do działów o 3 px w 180 ms.
+  Nie stosujemy pełnoekranowych przejść, animowanych wejść ani ruchu przy scrollu.
+- Wszystkie przejścia są wewnątrz prefers-reduced-motion: no-preference.
+  Przy reduce działanie i widoczność nie zależą od animacji.
+- Bez JS działa systemowy motyw CSS, a nieaktywny przycisk jest ukryty.
+  Brak bibliotek, zewnętrznych fontów, analityki i żądań do obcych podmiotów.
+
+## Treść i inspiracje
+
+Nie dopisujemy usług, obietnic, skali floty ani zasięgu. „Adres” w Żarowie,
+„Adres korespondencyjny” w Stargardzie i opis siedziby w Stargardzie pozostają
+oddzielnymi informacjami, których nie interpretujemy samodzielnie.
+
+Punkty odniesienia są zasadami, nie źródłem kodu lub skopiowanych materiałów:
+[Impala / Pentagram](https://www.pentagram.com/work/impala) — powiązanie detali
+z językiem branży; [Paul Smith / Limesharp](https://limesharp.net/projects/paul-smith-2025-redesign)
+— rozwinięcie istniejącego znaku i charakteru marki w typografii/kompozycji.
+[CSS transitions / web.dev](https://web.dev/learn/css/transitions) opisuje
+mechanizm i uwzględnianie preferencji ruchu.
+
+Zmiany sprawdzamy w obu motywach na 1440/1280/768/390/320 px, z klawiaturą,
+bez JS/pamięci, przy zoomie 200% i powiększonym tekście. Wynik automatu jest
+uzupełnieniem oceny renderu, nie deklaracją pełnej zgodności WCAG.
