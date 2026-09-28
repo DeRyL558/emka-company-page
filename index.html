@@ -32,7 +32,22 @@
       <a href="#kontakt">Kontakt</a>
       <a href="#dane">Dane firmy</a>
     </nav>
-    <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" hidden><span class="theme-track" aria-hidden="true"><svg class="theme-symbol" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg></span><span>Ciemny motyw</span></button>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Włącz ciemny motyw" title="Włącz ciemny motyw" hidden>
+      <svg class="theme-symbol" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+        <defs>
+          <mask id="theme-cutout" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+            <rect width="24" height="24" fill="#fff"/>
+            <circle class="theme-cutout" cx="24" cy="0" r="7.5" fill="#000"/>
+          </mask>
+        </defs>
+        <g class="theme-rays" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M12 1.5v2M12 20.5v2M1.5 12h2M20.5 12h2M4.58 4.58L6 6M18 18l1.42 1.42M4.58 19.42L6 18M18 6l1.42-1.42"/>
+        </g>
+        <g mask="url(#theme-cutout)">
+          <circle class="theme-disc" cx="12" cy="12" r="9" fill="currentColor"/>
+        </g>
+      </svg>
+    </button>
   </header>
 
   <main id="main" class="wrap" tabindex="-1">
@@ -49,9 +64,32 @@
       </section>
     </section>
 
+    <section id="dane" class="company-data section" tabindex="-1" aria-labelledby="data-title">
+      <div class="company-profile">
+        <div>
+          <p class="section-label">Dane firmy</p>
+          <h2 id="data-title">eMKa Monika Kogowska</h2>
+        </div>
+        <dl class="company-register">
+          <div><dt>NIP</dt><dd>8541677379</dd></div>
+          <div><dt>REGON</dt><dd>511394302</dd></div>
+        </dl>
+      </div>
+      <div class="company-addresses">
+        <section aria-labelledby="address-title">
+          <h3 id="address-title">Adres</h3>
+          <address>Diamentowa 11<br>73-110 Żarowo</address>
+        </section>
+        <section aria-labelledby="mailing-title">
+          <h3 id="mailing-title">Adres korespondencyjny</h3>
+          <address>Gdańska 1<br>73-110 Stargard</address>
+        </section>
+      </div>
+    </section>
+
     <details id="kontakt" class="contacts section">
       <summary class="contacts-summary">
-        <h2 id="contacts-title"><span>Kontakt</span><span class="contacts-caption">Transport, spedycja i rozliczenia</span><span class="disclosure-mark" aria-hidden="true"></span></h2>
+        <h2 id="contacts-title"><span>Kontakt</span><span class="disclosure-mark" aria-hidden="true"></span></h2>
       </summary>
       <div class="contact-list">
         <section class="department" aria-labelledby="transport-title">
@@ -93,30 +131,6 @@
         </section>
       </div>
     </details>
-
-    <section id="dane" class="company-data section" tabindex="-1" aria-labelledby="data-title">
-      <div class="section-heading">
-        <h2 id="data-title">Dane firmy</h2>
-      </div>
-      <div class="data-grid">
-        <section class="registration" aria-labelledby="registration-title">
-          <h3 id="registration-title">Dane rejestrowe</h3>
-          <dl>
-            <div class="registered-name"><dt>Nazwa</dt><dd>eMKa Monika Kogowska</dd></div>
-            <div><dt>NIP</dt><dd>8541677379</dd></div>
-            <div><dt>REGON</dt><dd>511394302</dd></div>
-          </dl>
-        </section>
-        <section aria-labelledby="address-title">
-          <h3 id="address-title">Adres</h3>
-          <address>Diamentowa 11<br>73-110 Żarowo</address>
-        </section>
-        <section aria-labelledby="mailing-title">
-          <h3 id="mailing-title">Adres korespondencyjny</h3>
-          <address>Gdańska 1<br>73-110 Stargard</address>
-        </section>
-      </div>
-    </section>
   </main>
   <footer class="site-footer wrap">
     <p>© 2026 eMKa Monika Kogowska</p>

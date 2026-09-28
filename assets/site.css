@@ -74,13 +74,16 @@ a, button, summary, section, details, main { scroll-margin-block: 1.5rem; }
 nav { display: flex; flex-wrap: wrap; gap: 2rem; }
 nav a { display: inline-flex; align-items: center; min-height: 48px; color: var(--text); font-size: .9375rem; font-weight: 550; text-decoration-color: transparent; }
 nav a:hover, nav a:focus-visible { text-decoration-color: currentColor; }
-.theme-toggle { display: inline-flex; align-items: center; justify-content: center; gap: .625rem; min-height: 48px; padding: .5rem .75rem; border: 1px solid transparent; border-radius: .25rem; background: transparent; color: var(--text); font: inherit; font-size: .875rem; cursor: pointer; }
-.theme-track { display: flex; align-items: center; flex: none; width: 44px; height: 28px; padding: 3px; border: 1px solid var(--control); border-radius: 20px; background: var(--surface); color: var(--text); }
-.theme-symbol { flex: none; width: 20px; height: 20px; }
-.theme-toggle[aria-pressed="true"] .theme-track { background: var(--office); color: var(--office-text); border-color: var(--office-line); }
-.theme-toggle[aria-pressed="true"] .theme-symbol { transform: translateX(16px) rotate(180deg); }
-.theme-toggle:hover { background: var(--surface); border-color: var(--control); }
-.introduction { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 4rem; align-items: stretch; padding-block: 3.5rem; }
+.theme-toggle { display: inline-flex; flex: none; align-items: center; justify-content: center; width: 3rem; height: 3rem; min-width: 48px; min-height: 48px; padding: 0; border: 1px solid var(--control); border-radius: 50%; background: transparent; color: var(--link); cursor: pointer; }
+.theme-toggle:hover { background: var(--surface); }
+.theme-symbol { flex: none; width: 1.5rem; height: 1.5rem; }
+.theme-disc, .theme-rays { transform-origin: 12px 12px; }
+.theme-disc { transform: scale(.6); }
+.theme-toggle[data-theme="dark"] .theme-symbol { transform: rotate(-15deg); }
+.theme-toggle[data-theme="dark"] .theme-disc { transform: scale(1); }
+.theme-toggle[data-theme="dark"] .theme-cutout { transform: translate(-8px, 8px); }
+.theme-toggle[data-theme="dark"] .theme-rays { opacity: 0; transform: rotate(45deg) scale(.5); }
+.introduction { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 4rem; align-items: stretch; padding-block: 3rem; }
 .introduction-copy { max-width: 45ch; margin-top: 1.5rem; color: var(--muted); }
 .office { display: flex; flex-direction: column; align-items: flex-start; padding: 2rem; background: var(--office); color: var(--office-text); border-radius: .25rem; }
 .office h2 { font-size: 1.25rem; font-weight: 600; letter-spacing: -.02em; }
@@ -91,18 +94,16 @@ nav a:hover, nav a:focus-visible { text-decoration-color: currentColor; }
 .office .department-link { width: 100%; justify-content: space-between; gap: .75rem; margin-top: auto; padding-top: 1.25rem; border-top: 1px solid var(--office-line); font-size: .9375rem; }
 .department-link span { flex: none; font-size: 1.375rem; }
 .section { scroll-margin-top: 2rem; }
-.contacts { background: var(--surface); border-radius: .25rem; }
-.section-heading { margin-bottom: 2rem; }
-.contacts-summary { padding: 1.75rem 2.5rem; cursor: pointer; list-style: none; border-radius: inherit; }
+.contacts { margin-bottom: 2.5rem; border-block: 1px solid var(--line); }
+.contacts-summary { padding: 1.375rem 2rem; cursor: pointer; list-style: none; border-radius: inherit; }
 .contacts-summary::-webkit-details-marker { display: none; }
-.contacts-summary h2 { display: grid; grid-template-columns: 12rem minmax(0, 1fr) 44px; align-items: center; gap: 1rem 2.5rem; }
-.contacts-caption { color: var(--muted); font: 400 .9375rem/1.6 system-ui, sans-serif; letter-spacing: normal; }
+.contacts-summary h2 { display: grid; grid-template-columns: minmax(0, 1fr) 44px; align-items: center; gap: 1rem; font-size: 1.5rem; }
 .disclosure-mark { position: relative; width: 44px; height: 44px; border: 1px solid var(--control); border-radius: 50%; }
 .disclosure-mark::before, .disclosure-mark::after { content: ""; position: absolute; inset: 20px 13px; height: 2px; background: var(--text); }
 .disclosure-mark::after { transform: rotate(90deg); }
 .contacts[open] .disclosure-mark::after { transform: rotate(0); }
 .contacts-summary:hover .disclosure-mark { background: var(--hover); }
-.contact-list { padding: 0 2.5rem 2.5rem; }
+.contact-list { padding: 0 2rem 2.5rem; }
 .department { display: grid; grid-template-columns: 12rem minmax(0, 1fr); gap: 2.5rem; padding-block: 1.75rem; border-top: 1px solid var(--line); }
 .department h3 { padding-top: .25rem; color: var(--muted); }
 .people { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; padding: 0; margin: 0; list-style: none; }
@@ -113,68 +114,69 @@ nav a:hover, nav a:focus-visible { text-decoration-color: currentColor; }
 .accounting { align-items: baseline; padding-bottom: 0; }
 .accounting > div { border-left: 1px solid var(--line); padding-left: 1.25rem; }
 .accounting p { color: var(--muted); font-size: .9375rem; }
-.company-data { display: grid; grid-template-columns: 12rem minmax(0, 1fr); gap: 2.5rem; padding: 3.5rem 2.5rem; }
-.data-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-.data-grid h3 { margin-bottom: .875rem; color: var(--muted); font-size: .9375rem; }
+.company-data { padding: 2rem; margin-bottom: 2.5rem; background: var(--surface); border: 1px solid var(--line); border-radius: .25rem; }
+.company-profile { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: end; gap: 2rem; padding-bottom: 1.75rem; }
+.section-label { margin-bottom: .625rem; color: var(--muted); font-size: .9375rem; }
+.company-profile h2 { overflow-wrap: anywhere; font-size: clamp(1.5rem, 2.6vw, 2rem); line-height: 1.2; letter-spacing: -.035em; }
+.company-register { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12ch), 1fr)); gap: 1.5rem; }
+dt { margin-bottom: .25rem; color: var(--muted); font-size: .875rem; }
+dd { margin: 0; overflow-wrap: anywhere; font-size: 1.0625rem; font-variant-numeric: tabular-nums; }
+.company-addresses { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.company-addresses h3 { margin-bottom: .5rem; color: var(--muted); font-size: .875rem; }
 address { font-style: normal; }
-.registration { grid-column: 1 / -1; padding-bottom: 1.75rem; border-bottom: 1px solid var(--line); }
-dl { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1.25rem; }
-dt { margin-bottom: .25rem; color: var(--muted); font-size: .8125rem; }
-dd { margin: 0; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
-.site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem; padding-block: 1.5rem 2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .8125rem; }
+.site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem; padding-bottom: 2rem; color: var(--muted); font-size: .8125rem; }
 
 @media (max-width: 62rem) {
   .introduction { gap: 2rem; }
   .office { padding: 1.5rem; }
-  .company-data, .department { grid-template-columns: 9rem minmax(0, 1fr); column-gap: 2rem; }
-  .contacts-summary h2 { grid-template-columns: 9rem minmax(0, 1fr) 44px; column-gap: 2rem; }
-  .company-data, .contacts-summary, .contact-list { padding-inline: 2rem; }
+  .department { grid-template-columns: 9rem minmax(0, 1fr); column-gap: 2rem; }
   .people { gap: 1.25rem; }
 }
 @media (max-width: 50rem) {
   .wrap { width: calc(100% - 3rem); }
-  .company-data, .department { grid-template-columns: minmax(0, 1fr); }
-  .company-data, .contacts-summary, .contact-list { padding-inline: 1.75rem; }
-  .department { gap: 1.25rem; }
-  .contacts-summary h2 { grid-template-columns: minmax(0, 1fr) 44px; gap: .5rem 1rem; }
-  .contacts-caption { grid-column: 1; }
-  .disclosure-mark { grid-column: 2; grid-row: 1 / 3; }
+  .company-data { padding: 1.75rem; }
+  .company-profile { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .department { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+  .contacts-summary, .contact-list { padding-inline: 1.75rem; }
   .desktop-break { display: none; }
 }
 @media (max-width: 42rem) {
   .wrap { width: calc(100% - min(2.5rem, 10vw)); }
-  .site-header { padding-block: 1.25rem; gap: .875rem 1rem; }
-  .brand-mark { flex-basis: 100%; }
+  .site-header { padding-block: 1.25rem; gap: .875rem .75rem; }
+  .brand-mark { flex: 1 0 7rem; width: auto; margin: 0; }
   .logo { width: 9rem; }
-  nav { gap: 1.25rem; margin-right: auto; }
-  .theme-toggle { padding-inline: .375rem; gap: .5rem; }
+  nav { order: 1; flex-basis: 100%; gap: 1.25rem; }
   .introduction { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; padding-block: 2rem; }
   .introduction-copy { margin-top: 1.25rem; }
   .office { padding: min(1.5rem, 6vw); }
   .office-email { margin-top: .5rem; margin-bottom: 1rem; font-size: 1.375rem; }
   .office .department-link { padding-top: .75rem; }
-  .contacts-summary { padding: min(1.5rem, 6vw); }
-  .contact-list { padding: 0 min(1.5rem, 6vw) min(1.5rem, 6vw); }
-  h2 { font-size: 1.75rem; }
+  .company-data { padding: min(1.5rem, 6vw); margin-bottom: 1.75rem; }
+  .company-profile { padding-bottom: 1.25rem; }
+  .company-profile h2 { max-width: 18ch; font-size: 1.75rem; }
+  .company-addresses { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding-top: 1.25rem; }
+  .contacts { margin-bottom: 1.75rem; }
+  .contacts-summary { padding: 1.25rem .25rem; }
+  .contact-list { padding: 0 .25rem 1.5rem; }
   .people { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
   .people h4 { font-size: 1.125rem; }
   .accounting { grid-template-columns: minmax(0, 1fr); gap: .875rem; }
-  .company-data { padding: 2.5rem .25rem; gap: 0; }
-  .data-grid { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; }
-  dl { grid-template-columns: 1fr 1fr; }
-  .registered-name { grid-column: 1 / -1; }
 }
 
 /* Only user actions move. Native disclosure remains usable without these features. */
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
   nav a { transition: text-decoration-color 160ms ease; }
-  .theme-symbol { transition: transform 420ms cubic-bezier(.2, .7, .2, 1); }
+  .theme-animated :is(.theme-symbol, .theme-disc, .theme-cutout, .theme-rays) { transition: transform 420ms cubic-bezier(.2, .7, .2, 1), opacity 200ms ease; }
   .disclosure-mark::after { transition: transform 320ms ease; }
   .department-link span { transition: transform 180ms ease; }
   .department-link:hover span, .department-link:focus-visible span { transform: translateY(3px); }
   /* Animate real elements: no screenshot overlay can intercept a second click. */
-  .theme-animated :is(body, a, .site-header, .theme-toggle, .theme-track, .contacts, .contacts-caption, .disclosure-mark, .department, .department h3, .people li, .accounting > div, .accounting p, .introduction-copy, .data-grid h3, .registration, dt, .site-footer) {
+  .theme-animated :is(body, .site-header, .company-data, .company-addresses, .contacts, .disclosure-mark, .department, .people li, .accounting > div) {
+    transition: background-color 420ms ease, border-color 420ms ease;
+  }
+  /* Interpolate text at its own element, without a second inherited transition. */
+  .theme-animated :is(h1, h2, h3, h4, p, dt, dd, address, a, button) {
     transition: background-color 420ms ease, color 420ms ease, border-color 420ms ease, text-decoration-color 160ms ease;
   }
   .theme-animated .logo { transition: opacity 420ms ease; }

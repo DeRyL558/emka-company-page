@@ -15,7 +15,13 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     const button = document.getElementById('theme-toggle');
-    const syncButton = () => button.setAttribute('aria-pressed', String(currentTheme() === 'dark'));
+    const syncButton = () => {
+      const theme = currentTheme();
+      const action = theme === 'dark' ? 'Włącz jasny motyw' : 'Włącz ciemny motyw';
+      button.dataset.theme = theme;
+      button.setAttribute('aria-label', action);
+      button.title = action;
+    };
     syncButton();
     button.hidden = false;
     button.addEventListener('click', () => {
