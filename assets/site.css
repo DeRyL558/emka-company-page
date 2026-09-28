@@ -1,0 +1,139 @@
+:root {
+  color-scheme: light;
+  --page: #fff;
+  --text: #202224;
+  --muted: #606365;
+  --line: #d8d9d7;
+  --link: #806019;
+  --hover: #f4f1e9;
+  --control: #777a7c;
+  --focus: #155da8;
+  --light-logo: block;
+  --dark-logo: none;
+}
+
+/* The system preference works even when JavaScript or storage is unavailable. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #17191b;
+    --text: #f0f0ed;
+    --muted: #b1b4b6;
+    --line: #424649;
+    --link: #e3c16f;
+    --hover: #2b2b25;
+    --control: #929698;
+    --focus: #9bc9ff;
+    --light-logo: none;
+    --dark-logo: block;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #17191b;
+  --text: #f0f0ed;
+  --muted: #b1b4b6;
+  --line: #424649;
+  --link: #e3c16f;
+  --hover: #2b2b25;
+  --control: #929698;
+  --focus: #9bc9ff;
+  --light-logo: none;
+  --dark-logo: block;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+[hidden] { display: none !important; }
+.wrap { width: min(70rem, calc(100% - 3rem)); margin-inline: auto; }
+h1, h2, h3, h4, p, dl { margin: 0; }
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 650; }
+h1 { font-size: clamp(2rem, 3.7vw, 2.75rem); letter-spacing: -.035em; }
+h2 { font-size: 1.5rem; letter-spacing: -.02em; }
+h3 { font-size: 1.125rem; }
+h4 { font-size: 1.125rem; font-weight: 600; }
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: .22em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+a, button { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible, main:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 4px;
+}
+a, button, section, main { scroll-margin-block: 1.5rem; }
+.skip-link { position: absolute; left: 1rem; top: .5rem; padding: .75rem; background: var(--page); z-index: 1; transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
+.site-header { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2rem; padding-block: 2rem; border-bottom: 1px solid var(--line); }
+.brand-mark { margin-right: auto; }
+.logo { width: 11.5rem; max-width: 100%; height: auto; }
+.logo-light { display: var(--light-logo); }
+.logo-dark { display: var(--dark-logo); }
+nav { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--text); font-weight: 550; }
+.theme-toggle { min-height: 44px; padding: .5rem .875rem; border: 1px solid var(--control); border-radius: .25rem; background: var(--page); color: var(--text); font: inherit; cursor: pointer; }
+.theme-toggle:hover, .theme-toggle[aria-pressed="true"] { background: var(--hover); }
+.introduction { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 3rem; align-items: center; padding-block: 3.5rem; }
+.eyebrow { margin-bottom: 1rem; color: var(--muted); font-weight: 550; }
+.introduction-copy { max-width: 42ch; margin-top: 1.25rem; color: var(--muted); font-size: 1.125rem; }
+.office { padding-left: 2rem; border-left: 1px solid var(--line); }
+.office p { margin-top: .5rem; color: var(--muted); }
+.office a { display: table; min-height: 44px; padding-block: .5rem; }
+.office-email { font-size: 1.375rem; font-weight: 600; }
+.department-link { margin-top: .5rem; font-size: .9375rem; }
+.department-link span { margin-left: .5rem; }
+.section { border-top: 1px solid var(--line); padding-block: 2rem; }
+.section-heading { display: flex; flex-wrap: wrap; gap: .5rem 2rem; justify-content: space-between; align-items: baseline; margin-bottom: 1.75rem; }
+.section-heading p { color: var(--muted); }
+.department { display: grid; grid-template-columns: 12rem minmax(0, 1fr); gap: 2rem; padding-block: 1.5rem; border-top: 1px solid var(--line); }
+.department h3 { padding-top: .125rem; }
+.people { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; padding: 0; margin: 0; list-style: none; }
+.people li { min-width: 0; }
+.people h4 { margin-bottom: .375rem; }
+.people a, .accounting a { display: table; max-width: 100%; min-height: 44px; padding-block: .5rem; }
+.phone { color: var(--text); font-variant-numeric: tabular-nums; }
+.accounting p { color: var(--muted); }
+.company-data { padding-bottom: 2.5rem; }
+.data-grid { display: grid; grid-template-columns: 1fr 1fr 1.25fr; gap: 2rem; }
+.data-grid h3 { margin-bottom: 1rem; }
+address { font-style: normal; }
+dl > div { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: .5rem; margin-top: .375rem; }
+dt { color: var(--muted); }
+dd { margin: 0; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+.registered-name { display: block; margin-top: 0; margin-bottom: .75rem; }
+.site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem; padding-block: 1.5rem 2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .875rem; }
+
+@media (max-width: 56rem) {
+  .site-header { gap: 1rem 1.5rem; }
+  .introduction { gap: 2rem; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); }
+  .office { padding-left: 1.5rem; }
+  .department { grid-template-columns: 8rem minmax(0, 1fr); gap: 1.5rem; }
+  .people { gap: 1.5rem; }
+  .data-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 42rem) {
+  .wrap { width: calc(100% - 2.5rem); }
+  .site-header { padding-block: 1.25rem; gap: .75rem 1rem; }
+  .brand-mark { flex-basis: 100%; }
+  .logo { width: 10rem; }
+  nav { gap: 1rem; margin-right: auto; }
+  .theme-toggle { font-size: .875rem; padding-inline: .625rem; }
+  .introduction { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; padding-block: 2rem; }
+  h1 { max-width: 16ch; }
+  .eyebrow { font-size: .9375rem; margin-bottom: .75rem; }
+  .introduction-copy { margin-top: 1rem; font-size: 1rem; }
+  .office { padding: 1.5rem 0 0; border-left: 0; border-top: 1px solid var(--line); }
+  .office h2 { font-size: 1.25rem; }
+  .section { padding-block: 1.75rem; }
+  .section-heading { margin-bottom: 1.25rem; }
+  .department { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+  .people { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .people h4 { font-size: 1rem; }
+  .data-grid { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; }
+}
+/* There are no animated transitions, including when reduced motion is requested. */
