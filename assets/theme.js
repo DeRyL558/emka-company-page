@@ -19,6 +19,7 @@
     syncButton();
     button.hidden = false;
     button.addEventListener('click', () => {
+      root.classList.add('theme-animated');
       preference = currentTheme() === 'dark' ? 'light' : 'dark';
       root.dataset.theme = preference;
       syncButton();

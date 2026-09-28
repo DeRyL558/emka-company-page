@@ -13,5 +13,7 @@ przeczytaj [docs/design-language.md](docs/design-language.md).
 - Sprawdzaj faktyczny render w obu motywach, telefon 390 i 320 px, desktop,
   fokus/klawiaturę, reflow, kontrast, zasoby oraz zgodność mailto/tel z bazą.
   Nie uruchamiaj połączeń ani nie wysyłaj wiadomości w ramach testów.
+- Po zmianie animacji sprawdź również szybkie rzeczywiste kliknięcia, zmianę
+  celu podczas rozwijania kontaktów oraz prefers-reduced-motion.
 - W PR podaj bazę i sprawdzony kod, dowody przed/po, wykonane kontrole
   i ograniczenia. Nie nazywaj emulacji Chromium testem Safari lub telefonu.
