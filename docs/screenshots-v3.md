@@ -36,4 +36,4 @@ Tekst 200%:
 - 390 px: [jasny](screenshots-v3/after-text200-390-light.png), [ciemny](screenshots-v3/after-text200-390-dark.png).
 - 320 px: [jasny](screenshots-v3/after-text200-320-light.png), [ciemny](screenshots-v3/after-text200-320-dark.png).
 
-[Wyniki](validation.md) · [Review](review-v3.md)
+[Wyniki](validation-v3.md) · [Review](review-v3.md)

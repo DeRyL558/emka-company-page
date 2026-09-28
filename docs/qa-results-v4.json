@@ -1,0 +1,3144 @@
+{
+  "base": "aff0f14e43a50e2bf190cf6ecd0a60a56db17153",
+  "previousDesign": "e4ef94946d9ad07741585579c0d4bb8c80d8788b",
+  "implementation": "cb2b61d3b3d7ea21a9092d512d1efc3b55aaf00a",
+  "files": {
+    "index.html": "9685682caf513ac6116a6a248d569545fdd9483db52ba61f606232c49aa9b8f0",
+    "assets/site.css": "af0b184077111a27b5eecea09c5b765e99ed2e34ff4ec7f954f3ad4b5cea779b",
+    "assets/theme.js": "5e22dd53155e187a5babddbfbdb553f0feb5f07d502181ede3a32c2d0d681fbc",
+    "assets/navigation.js": "89a8c38abf4299a9a7662159301e44b72b8e9a0986db38946d71da480b9b299f"
+  },
+  "checks": [
+    {
+      "name": "10 contact hrefs, visible labels, 6 assignments identical",
+      "detail": [
+        {
+          "name": "Biuro",
+          "department": "Zapytania ogólne",
+          "links": [
+            "mailto:office@emka-ts.eu"
+          ]
+        },
+        {
+          "name": "Paweł Gutowski",
+          "department": "Transport",
+          "links": [
+            "mailto:gutowski.emka@gmail.com",
+            "tel:+48600200513"
+          ]
+        },
+        {
+          "name": "Agnieszka Zielińska",
+          "department": "Transport",
+          "links": [
+            "mailto:a.zielinska@emka-ts.eu",
+            "tel:+48604138909"
+          ]
+        },
+        {
+          "name": "Joanna Zwolińska",
+          "department": "Spedycja",
+          "links": [
+            "mailto:j.zwolinska@emka-ts.eu",
+            "tel:+48505453133"
+          ]
+        },
+        {
+          "name": "Aleksandra Zwolińska",
+          "department": "Spedycja",
+          "links": [
+            "mailto:a.zwolinska@emka-ts.eu",
+            "tel:+48734171987"
+          ]
+        },
+        {
+          "name": "Księgowość",
+          "department": "Faktury / Płatności",
+          "links": [
+            "mailto:accounting@emka-ts.eu"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Company data, two addresses and one h1",
+      "detail": "PASS"
+    },
+    {
+      "name": "axe/layout/targets/logo 1440 light",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 45
+        },
+        "layout": {
+          "w": 1440,
+          "scroll": 1440,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 54.90625,
+              "height": 48
+            },
+            {
+              "text": "Dane firmy",
+              "width": 76.984375,
+              "height": 48
+            },
+            {
+              "text": "",
+              "width": 48,
+              "height": 48
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 210.96875,
+              "height": 57.59375
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 371.203125,
+              "height": 64.1875
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                168,
+                64
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 1440 dark",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 45
+        },
+        "layout": {
+          "w": 1440,
+          "scroll": 1440,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 54.90625,
+              "height": 48
+            },
+            {
+              "text": "Dane firmy",
+              "width": 76.984375,
+              "height": 48
+            },
+            {
+              "text": "",
+              "width": 48,
+              "height": 48
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 210.96875,
+              "height": 57.59375
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 371.203125,
+              "height": 64.1875
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo-dark.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                168,
+                64
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 1280 light",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 45
+        },
+        "layout": {
+          "w": 1280,
+          "scroll": 1280,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 54.90625,
+              "height": 48
+            },
+            {
+              "text": "Dane firmy",
+              "width": 76.984375,
+              "height": 48
+            },
+            {
+              "text": "",
+              "width": 48,
+              "height": 48
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 207.65625,
+              "height": 56.9375
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 371.203125,
+              "height": 64.1875
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                168,
+                64
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 1280 dark",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 45
+        },
+        "layout": {
+          "w": 1280,
+          "scroll": 1280,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 54.90625,
+              "height": 48
+            },
+            {
+              "text": "Dane firmy",
+              "width": 76.984375,
+              "height": 48
+            },
+            {
+              "text": "",
+              "width": 48,
+              "height": 48
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 207.65625,
+              "height": 56.9375
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 371.203125,
+              "height": 64.1875
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo-dark.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                168,
+                64
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 768 light",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 45
+        },
+        "layout": {
+          "w": 768,
+          "scroll": 768,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 54.90625,
+              "height": 48
+            },
+            {
+              "text": "Dane firmy",
+              "width": 76.984375,
+              "height": 48
+            },
+            {
+              "text": "",
+              "width": 48,
+              "height": 48
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 164.03125,
+              "height": 48
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 227.203125,
+              "height": 64.1875
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                168,
+                64
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 768 dark",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 45
+        },
+        "layout": {
+          "w": 768,
+          "scroll": 768,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 54.90625,
+              "height": 48
+            },
+            {
+              "text": "Dane firmy",
+              "width": 76.984375,
+              "height": 48
+            },
+            {
+              "text": "",
+              "width": 48,
+              "height": 48
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 164.03125,
+              "height": 48
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 227.203125,
+              "height": 64.1875
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo-dark.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                168,
+                64
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 390 light",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 45
+        },
+        "layout": {
+          "w": 390,
+          "scroll": 390,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 54.90625,
+              "height": 48
+            },
+            {
+              "text": "Dane firmy",
+              "width": 76.984375,
+              "height": 48
+            },
+            {
+              "text": "",
+              "width": 48,
+              "height": 48
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 178.640625,
+              "height": 51.1875
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 304.21875,
+              "height": 56.1875
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                144,
+                54
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 390 dark",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 45
+        },
+        "layout": {
+          "w": 390,
+          "scroll": 390,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 54.90625,
+              "height": 48
+            },
+            {
+              "text": "Dane firmy",
+              "width": 76.984375,
+              "height": 48
+            },
+            {
+              "text": "",
+              "width": 48,
+              "height": 48
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 178.640625,
+              "height": 51.1875
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 304.21875,
+              "height": 56.1875
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo-dark.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                144,
+                54
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 320 light",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 45
+        },
+        "layout": {
+          "w": 320,
+          "scroll": 320,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 54.90625,
+              "height": 48
+            },
+            {
+              "text": "Dane firmy",
+              "width": 76.984375,
+              "height": 48
+            },
+            {
+              "text": "",
+              "width": 48,
+              "height": 48
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 178.640625,
+              "height": 51.1875
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 249.625,
+              "height": 56.1875
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                144,
+                54
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "axe/layout/targets/logo 320 dark",
+      "detail": {
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 1
+            }
+          ],
+          "passes": 45
+        },
+        "layout": {
+          "w": 320,
+          "scroll": 320,
+          "targets": [
+            {
+              "text": "Kontakt",
+              "width": 54.90625,
+              "height": 48
+            },
+            {
+              "text": "Dane firmy",
+              "width": 76.984375,
+              "height": 48
+            },
+            {
+              "text": "",
+              "width": 48,
+              "height": 48
+            },
+            {
+              "text": "office@emka-ts.eu",
+              "width": 178.640625,
+              "height": 51.1875
+            },
+            {
+              "text": "Kontakty do działów ↓",
+              "width": 249.625,
+              "height": 56.1875
+            },
+            {
+              "text": "gutowski.emka@gmail.com",
+              "width": 196.640625,
+              "height": 44
+            },
+            {
+              "text": "+48 600 200 513",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zielinska@emka-ts.eu",
+              "width": 170.625,
+              "height": 44
+            },
+            {
+              "text": "+48 604 138 909",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "j.zwolinska@emka-ts.eu",
+              "width": 174.1875,
+              "height": 44
+            },
+            {
+              "text": "+48 505 453 133",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "a.zwolinska@emka-ts.eu",
+              "width": 179.0625,
+              "height": 44
+            },
+            {
+              "text": "+48 734 171 987",
+              "width": 135.625,
+              "height": 44
+            },
+            {
+              "text": "accounting@emka-ts.eu",
+              "width": 176.359375,
+              "height": 44
+            }
+          ],
+          "logos": [
+            {
+              "src": "assets/logo-dark.png",
+              "natural": [
+                1812,
+                685
+              ],
+              "render": [
+                144,
+                54
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "No JS light",
+      "detail": "content, all contacts, system theme, hidden inactive control"
+    },
+    {
+      "name": "No JS dark",
+      "detail": "content, all contacts, system theme, hidden inactive control"
+    },
+    {
+      "name": "Unavailable storage light",
+      "detail": "get blocked; repeated toggles work without errors"
+    },
+    {
+      "name": "Unavailable storage dark",
+      "detail": "get blocked; repeated toggles work without errors"
+    },
+    {
+      "name": "Persisted explicit theme overrides system in both directions",
+      "detail": "PASS"
+    },
+    {
+      "name": "Invalid saved value and live system change",
+      "detail": "PASS"
+    },
+    {
+      "name": "Keyboard Tab order and visible focus",
+      "detail": [
+        {
+          "text": "Przejdź do treści",
+          "tag": "A",
+          "href": "#main",
+          "outline": "3px"
+        },
+        {
+          "text": "Kontakt",
+          "tag": "A",
+          "href": "#kontakt",
+          "outline": "3px"
+        },
+        {
+          "text": "Dane firmy",
+          "tag": "A",
+          "href": "#dane",
+          "outline": "3px"
+        },
+        {
+          "text": "",
+          "tag": "BUTTON",
+          "href": null,
+          "outline": "3px"
+        },
+        {
+          "text": "office@emka-ts.eu",
+          "tag": "A",
+          "href": "mailto:office@emka-ts.eu",
+          "outline": "3px"
+        },
+        {
+          "text": "Kontakty do działów ↓",
+          "tag": "A",
+          "href": "#kontakt",
+          "outline": "3px"
+        },
+        {
+          "text": "Kontakt",
+          "tag": "SUMMARY",
+          "href": null,
+          "outline": "3px"
+        },
+        {
+          "text": "gutowski.emka@gmail.com",
+          "tag": "A",
+          "href": "mailto:gutowski.emka@gmail.com",
+          "outline": "3px"
+        },
+        {
+          "text": "+48 600 200 513",
+          "tag": "A",
+          "href": "tel:+48600200513",
+          "outline": "3px"
+        },
+        {
+          "text": "a.zielinska@emka-ts.eu",
+          "tag": "A",
+          "href": "mailto:a.zielinska@emka-ts.eu",
+          "outline": "3px"
+        },
+        {
+          "text": "+48 604 138 909",
+          "tag": "A",
+          "href": "tel:+48604138909",
+          "outline": "3px"
+        },
+        {
+          "text": "j.zwolinska@emka-ts.eu",
+          "tag": "A",
+          "href": "mailto:j.zwolinska@emka-ts.eu",
+          "outline": "3px"
+        },
+        {
+          "text": "+48 505 453 133",
+          "tag": "A",
+          "href": "tel:+48505453133",
+          "outline": "3px"
+        },
+        {
+          "text": "a.zwolinska@emka-ts.eu",
+          "tag": "A",
+          "href": "mailto:a.zwolinska@emka-ts.eu",
+          "outline": "3px"
+        },
+        {
+          "text": "+48 734 171 987",
+          "tag": "A",
+          "href": "tel:+48734171987",
+          "outline": "3px"
+        },
+        {
+          "text": "accounting@emka-ts.eu",
+          "tag": "A",
+          "href": "mailto:accounting@emka-ts.eu",
+          "outline": "3px"
+        }
+      ]
+    },
+    {
+      "name": "Skip link Enter focuses main; next Tab reaches office",
+      "detail": "PASS"
+    },
+    {
+      "name": "Theme control Space/Enter, focus screenshots",
+      "detail": "PASS"
+    },
+    {
+      "name": "Section navigation",
+      "detail": "PASS; no mail/tel activation"
+    },
+    {
+      "name": "Reduced motion",
+      "detail": "No animations"
+    },
+    {
+      "name": "favicon and absolute Open Graph image paths",
+      "detail": "HTTP 200"
+    }
+  ],
+  "before": [
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "initial": {
+        "width": 1440,
+        "scroll": 1440,
+        "main": true,
+        "contact": {
+          "x": 892.796875,
+          "y": 284.09375,
+          "width": 210.96875,
+          "height": 57.59375,
+          "top": 284.09375,
+          "right": 1103.765625,
+          "bottom": 341.6875,
+          "left": 892.796875
+        },
+        "h1": {
+          "x": 144,
+          "y": 176.5,
+          "width": 652.796875,
+          "height": 176.25,
+          "top": 176.5,
+          "right": 796.796875,
+          "bottom": 352.75,
+          "left": 144
+        }
+      },
+      "overflow": {
+        "scroll": 1440,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/iteration3/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/navigation.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/theme.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "initial": {
+        "width": 1440,
+        "scroll": 1440,
+        "main": true,
+        "contact": {
+          "x": 892.796875,
+          "y": 284.09375,
+          "width": 210.96875,
+          "height": 57.59375,
+          "top": 284.09375,
+          "right": 1103.765625,
+          "bottom": 341.6875,
+          "left": 892.796875
+        },
+        "h1": {
+          "x": 144,
+          "y": 176.5,
+          "width": 652.796875,
+          "height": 176.25,
+          "top": 176.5,
+          "right": 796.796875,
+          "bottom": 352.75,
+          "left": 144
+        }
+      },
+      "overflow": {
+        "scroll": 1440,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/iteration3/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/navigation.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "theme": "light",
+      "initial": {
+        "width": 1280,
+        "scroll": 1280,
+        "main": true,
+        "contact": {
+          "x": 812.796875,
+          "y": 284.09375,
+          "width": 207.65625,
+          "height": 56.9375,
+          "top": 284.09375,
+          "right": 1020.453125,
+          "bottom": 341.03125,
+          "left": 812.796875
+        },
+        "h1": {
+          "x": 64,
+          "y": 176.5,
+          "width": 652.796875,
+          "height": 156.65625,
+          "top": 176.5,
+          "right": 716.796875,
+          "bottom": 333.15625,
+          "left": 64
+        }
+      },
+      "overflow": {
+        "scroll": 1280,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/iteration3/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/navigation.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "theme": "dark",
+      "initial": {
+        "width": 1280,
+        "scroll": 1280,
+        "main": true,
+        "contact": {
+          "x": 812.796875,
+          "y": 284.09375,
+          "width": 207.65625,
+          "height": 56.9375,
+          "top": 284.09375,
+          "right": 1020.453125,
+          "bottom": 341.03125,
+          "left": 812.796875
+        },
+        "h1": {
+          "x": 64,
+          "y": 176.5,
+          "width": 652.796875,
+          "height": 156.65625,
+          "top": 176.5,
+          "right": 716.796875,
+          "bottom": 333.15625,
+          "left": 64
+        }
+      },
+      "overflow": {
+        "scroll": 1280,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/iteration3/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/navigation.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "initial": {
+        "width": 768,
+        "scroll": 768,
+        "main": true,
+        "contact": {
+          "x": 492.796875,
+          "y": 276.09375,
+          "width": 164.03125,
+          "height": 48,
+          "top": 276.09375,
+          "right": 656.828125,
+          "bottom": 324.09375,
+          "left": 492.796875
+        },
+        "h1": {
+          "x": 24,
+          "y": 176.5,
+          "width": 412.796875,
+          "height": 106.0625,
+          "top": 176.5,
+          "right": 436.796875,
+          "bottom": 282.5625,
+          "left": 24
+        }
+      },
+      "overflow": {
+        "scroll": 768,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/iteration3/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/navigation.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "initial": {
+        "width": 768,
+        "scroll": 768,
+        "main": true,
+        "contact": {
+          "x": 492.796875,
+          "y": 276.09375,
+          "width": 164.03125,
+          "height": 48,
+          "top": 276.09375,
+          "right": 656.828125,
+          "bottom": 324.09375,
+          "left": 492.796875
+        },
+        "h1": {
+          "x": 24,
+          "y": 176.5,
+          "width": 412.796875,
+          "height": 106.0625,
+          "top": 176.5,
+          "right": 436.796875,
+          "bottom": 282.5625,
+          "left": 24
+        }
+      },
+      "overflow": {
+        "scroll": 768,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/iteration3/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/navigation.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/theme.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "initial": {
+        "width": 390,
+        "scroll": 390,
+        "main": true,
+        "contact": {
+          "x": 42.890625,
+          "y": 483.65625,
+          "width": 178.640625,
+          "height": 51.1875,
+          "top": 483.65625,
+          "right": 221.53125,
+          "bottom": 534.84375,
+          "left": 42.890625
+        },
+        "h1": {
+          "x": 19.5,
+          "y": 189.421875,
+          "width": 351,
+          "height": 106.0625,
+          "top": 189.421875,
+          "right": 370.5,
+          "bottom": 295.484375,
+          "left": 19.5
+        }
+      },
+      "overflow": {
+        "scroll": 390,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/iteration3/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/navigation.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "initial": {
+        "width": 390,
+        "scroll": 390,
+        "main": true,
+        "contact": {
+          "x": 42.890625,
+          "y": 483.65625,
+          "width": 178.640625,
+          "height": 51.1875,
+          "top": 483.65625,
+          "right": 221.53125,
+          "bottom": 534.84375,
+          "left": 42.890625
+        },
+        "h1": {
+          "x": 19.5,
+          "y": 189.421875,
+          "width": 351,
+          "height": 106.0625,
+          "top": 189.421875,
+          "right": 370.5,
+          "bottom": 295.484375,
+          "left": 19.5
+        }
+      },
+      "overflow": {
+        "scroll": 390,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/iteration3/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/navigation.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "theme": "light",
+      "initial": {
+        "width": 320,
+        "scroll": 320,
+        "main": true,
+        "contact": {
+          "x": 35.1875,
+          "y": 541.453125,
+          "width": 178.640625,
+          "height": 51.1875,
+          "top": 541.453125,
+          "right": 213.828125,
+          "bottom": 592.640625,
+          "left": 35.1875
+        },
+        "h1": {
+          "x": 16,
+          "y": 251.421875,
+          "width": 288,
+          "height": 106.0625,
+          "top": 251.421875,
+          "right": 304,
+          "bottom": 357.484375,
+          "left": 16
+        }
+      },
+      "overflow": {
+        "scroll": 320,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/iteration3/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/navigation.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "theme": "dark",
+      "initial": {
+        "width": 320,
+        "scroll": 320,
+        "main": true,
+        "contact": {
+          "x": 35.1875,
+          "y": 541.453125,
+          "width": 178.640625,
+          "height": 51.1875,
+          "top": 541.453125,
+          "right": 213.828125,
+          "bottom": 592.640625,
+          "left": 35.1875
+        },
+        "h1": {
+          "x": 16,
+          "y": 251.421875,
+          "width": 288,
+          "height": 106.0625,
+          "top": 251.421875,
+          "right": 304,
+          "bottom": 357.484375,
+          "left": 16
+        }
+      },
+      "overflow": {
+        "scroll": 320,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/iteration3/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/iteration3/assets/navigation.js",
+          "status": 200
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "initial": {
+        "width": 1440,
+        "scroll": 1440,
+        "main": true,
+        "contact": {
+          "x": 892.796875,
+          "y": 276.09375,
+          "width": 210.96875,
+          "height": 57.59375,
+          "top": 276.09375,
+          "right": 1103.765625,
+          "bottom": 333.6875,
+          "left": 892.796875
+        },
+        "h1": {
+          "x": 144,
+          "y": 168.5,
+          "width": 652.796875,
+          "height": 176.25,
+          "top": 168.5,
+          "right": 796.796875,
+          "bottom": 344.75,
+          "left": 144
+        }
+      },
+      "overflow": {
+        "scroll": 1440,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "initial": {
+        "width": 1440,
+        "scroll": 1440,
+        "main": true,
+        "contact": {
+          "x": 892.796875,
+          "y": 276.09375,
+          "width": 210.96875,
+          "height": 57.59375,
+          "top": 276.09375,
+          "right": 1103.765625,
+          "bottom": 333.6875,
+          "left": 892.796875
+        },
+        "h1": {
+          "x": 144,
+          "y": 168.5,
+          "width": 652.796875,
+          "height": 176.25,
+          "top": 168.5,
+          "right": 796.796875,
+          "bottom": 344.75,
+          "left": 144
+        }
+      },
+      "overflow": {
+        "scroll": 1440,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "theme": "light",
+      "initial": {
+        "width": 1280,
+        "scroll": 1280,
+        "main": true,
+        "contact": {
+          "x": 812.796875,
+          "y": 276.09375,
+          "width": 207.65625,
+          "height": 56.9375,
+          "top": 276.09375,
+          "right": 1020.453125,
+          "bottom": 333.03125,
+          "left": 812.796875
+        },
+        "h1": {
+          "x": 64,
+          "y": 168.5,
+          "width": 652.796875,
+          "height": 156.65625,
+          "top": 168.5,
+          "right": 716.796875,
+          "bottom": 325.15625,
+          "left": 64
+        }
+      },
+      "overflow": {
+        "scroll": 1280,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "theme": "dark",
+      "initial": {
+        "width": 1280,
+        "scroll": 1280,
+        "main": true,
+        "contact": {
+          "x": 812.796875,
+          "y": 276.09375,
+          "width": 207.65625,
+          "height": 56.9375,
+          "top": 276.09375,
+          "right": 1020.453125,
+          "bottom": 333.03125,
+          "left": 812.796875
+        },
+        "h1": {
+          "x": 64,
+          "y": 168.5,
+          "width": 652.796875,
+          "height": 156.65625,
+          "top": 168.5,
+          "right": 716.796875,
+          "bottom": 325.15625,
+          "left": 64
+        }
+      },
+      "overflow": {
+        "scroll": 1280,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "initial": {
+        "width": 768,
+        "scroll": 768,
+        "main": true,
+        "contact": {
+          "x": 492.796875,
+          "y": 268.09375,
+          "width": 164.03125,
+          "height": 48,
+          "top": 268.09375,
+          "right": 656.828125,
+          "bottom": 316.09375,
+          "left": 492.796875
+        },
+        "h1": {
+          "x": 24,
+          "y": 168.5,
+          "width": 412.796875,
+          "height": 106.0625,
+          "top": 168.5,
+          "right": 436.796875,
+          "bottom": 274.5625,
+          "left": 24
+        }
+      },
+      "overflow": {
+        "scroll": 768,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "initial": {
+        "width": 768,
+        "scroll": 768,
+        "main": true,
+        "contact": {
+          "x": 492.796875,
+          "y": 268.09375,
+          "width": 164.03125,
+          "height": 48,
+          "top": 268.09375,
+          "right": 656.828125,
+          "bottom": 316.09375,
+          "left": 492.796875
+        },
+        "h1": {
+          "x": 24,
+          "y": 168.5,
+          "width": 412.796875,
+          "height": 106.0625,
+          "top": 168.5,
+          "right": 436.796875,
+          "bottom": 274.5625,
+          "left": 24
+        }
+      },
+      "overflow": {
+        "scroll": 768,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "initial": {
+        "width": 390,
+        "scroll": 390,
+        "main": true,
+        "contact": {
+          "x": 42.890625,
+          "y": 483.65625,
+          "width": 178.640625,
+          "height": 51.1875,
+          "top": 483.65625,
+          "right": 221.53125,
+          "bottom": 534.84375,
+          "left": 42.890625
+        },
+        "h1": {
+          "x": 19.5,
+          "y": 189.421875,
+          "width": 351,
+          "height": 106.0625,
+          "top": 189.421875,
+          "right": 370.5,
+          "bottom": 295.484375,
+          "left": 19.5
+        }
+      },
+      "overflow": {
+        "scroll": 390,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "initial": {
+        "width": 390,
+        "scroll": 390,
+        "main": true,
+        "contact": {
+          "x": 42.890625,
+          "y": 483.65625,
+          "width": 178.640625,
+          "height": 51.1875,
+          "top": 483.65625,
+          "right": 221.53125,
+          "bottom": 534.84375,
+          "left": 42.890625
+        },
+        "h1": {
+          "x": 19.5,
+          "y": 189.421875,
+          "width": 351,
+          "height": 106.0625,
+          "top": 189.421875,
+          "right": 370.5,
+          "bottom": 295.484375,
+          "left": 19.5
+        }
+      },
+      "overflow": {
+        "scroll": 390,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "theme": "light",
+      "initial": {
+        "width": 320,
+        "scroll": 320,
+        "main": true,
+        "contact": {
+          "x": 35.1875,
+          "y": 479.453125,
+          "width": 178.640625,
+          "height": 51.1875,
+          "top": 479.453125,
+          "right": 213.828125,
+          "bottom": 530.640625,
+          "left": 35.1875
+        },
+        "h1": {
+          "x": 16,
+          "y": 189.421875,
+          "width": 288,
+          "height": 106.0625,
+          "top": 189.421875,
+          "right": 304,
+          "bottom": 295.484375,
+          "left": 16
+        }
+      },
+      "overflow": {
+        "scroll": 320,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 844,
+      "theme": "dark",
+      "initial": {
+        "width": 320,
+        "scroll": 320,
+        "main": true,
+        "contact": {
+          "x": 35.1875,
+          "y": 479.453125,
+          "width": 178.640625,
+          "height": 51.1875,
+          "top": 479.453125,
+          "right": 213.828125,
+          "bottom": 530.640625,
+          "left": 35.1875
+        },
+        "h1": {
+          "x": 16,
+          "y": 189.421875,
+          "width": 288,
+          "height": 106.0625,
+          "top": 189.421875,
+          "right": 304,
+          "bottom": 295.484375,
+          "left": 16
+        }
+      },
+      "overflow": {
+        "scroll": 320,
+        "offenders": []
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/site.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/theme.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/logo-dark.png",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8765/company-page-redesign/assets/navigation.js",
+          "status": 200
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "name": "Closed contacts axe light",
+      "result": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "name": "Closed contacts axe dark",
+      "result": {
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "name": "Native disclosure expands and collapses over time",
+      "closed": 86,
+      "middle": 622.03125,
+      "open": 970.9375,
+      "closing": 445.890625
+    },
+    {
+      "name": "Summary Space/Enter and Tab into department contacts",
+      "result": "PASS"
+    },
+    {
+      "name": "nav a[href=\"#kontakt\"] expands and scrolls smoothly",
+      "earlyY": 51,
+      "final": {
+        "y": 1065,
+        "top": 32.34375,
+        "open": true,
+        "focus": "SUMMARY"
+      }
+    },
+    {
+      "name": ".department-link expands and scrolls smoothly",
+      "earlyY": 49,
+      "final": {
+        "y": 1065,
+        "top": 32.34375,
+        "open": true,
+        "focus": "SUMMARY"
+      }
+    },
+    {
+      "name": "Deep link #kontakt",
+      "result": "Expanded"
+    },
+    {
+      "name": "Browser back from company data to contacts",
+      "result": "Expanded and reachable"
+    },
+    {
+      "name": "Rapid contact then company navigation",
+      "result": "Latest destination retained"
+    },
+    {
+      "name": "Reduced-motion disclosure and scrolling",
+      "result": {
+        "animations": 0,
+        "scroll": "auto",
+        "open": true
+      }
+    },
+    {
+      "name": "Text 200% 390 light",
+      "result": {
+        "width": 390,
+        "scroll": 390,
+        "visibleContacts": 10,
+        "logo": [
+          {
+            "width": 231,
+            "height": 87,
+            "naturalWidth": 1812,
+            "naturalHeight": 685
+          }
+        ],
+        "order": [
+          "Adres",
+          "Adres korespondencyjny"
+        ]
+      }
+    },
+    {
+      "name": "Text 200% 390 dark",
+      "result": {
+        "width": 390,
+        "scroll": 390,
+        "visibleContacts": 10,
+        "logo": [
+          {
+            "width": 231,
+            "height": 87,
+            "naturalWidth": 1812,
+            "naturalHeight": 685
+          }
+        ],
+        "order": [
+          "Adres",
+          "Adres korespondencyjny"
+        ]
+      }
+    },
+    {
+      "name": "Text 200% 320 light",
+      "result": {
+        "width": 320,
+        "scroll": 320,
+        "visibleContacts": 10,
+        "logo": [
+          {
+            "width": 288,
+            "height": 109,
+            "naturalWidth": 1812,
+            "naturalHeight": 685
+          }
+        ],
+        "order": [
+          "Adres",
+          "Adres korespondencyjny"
+        ]
+      }
+    },
+    {
+      "name": "Text 200% 320 dark",
+      "result": {
+        "width": 320,
+        "scroll": 320,
+        "visibleContacts": 10,
+        "logo": [
+          {
+            "width": 288,
+            "height": 109,
+            "naturalWidth": 1812,
+            "naturalHeight": 685
+          }
+        ],
+        "order": [
+          "Adres",
+          "Adres korespondencyjny"
+        ]
+      }
+    }
+  ],
+  "motion": [
+    {
+      "name": "Palette interpolation after 100ms",
+      "initialColor": "rgb(241, 242, 239)",
+      "intermediateColor": "rgb(197, 198, 195)"
+    },
+    {
+      "name": "Theme icon motion",
+      "result": {
+        "duration": "0.42s, 0.2s",
+        "property": "transform, opacity",
+        "animations": 1
+      }
+    },
+    {
+      "name": "2 real pointer clicks 100ms apart",
+      "result": "2/2 received; returns to light"
+    },
+    {
+      "name": "9 real pointer clicks 30ms apart",
+      "result": "9/9 received; DOM/aria/storage dark, focus retained"
+    },
+    {
+      "name": "Reduced motion",
+      "result": {
+        "theme": "light",
+        "animations": 0,
+        "iconDuration": "0s"
+      }
+    },
+    {
+      "name": "9 rapid keyboard toggles",
+      "result": "Final dark, dynamic action name synchronized"
+    }
+  ],
+  "morph": {
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".department-link > span"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+          }
+        ]
+      }
+    ],
+    "samples": [
+      {
+        "destination": "dark",
+        "initial": {
+          "theme": "light",
+          "label": "Włącz ciemny motyw",
+          "parts": [
+            {
+              "part": "theme-symbol",
+              "transform": "none",
+              "opacity": "1"
+            },
+            {
+              "part": "theme-cutout",
+              "transform": "none",
+              "opacity": "1"
+            },
+            {
+              "part": "theme-rays",
+              "transform": "none",
+              "opacity": "1"
+            },
+            {
+              "part": "theme-disc",
+              "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)",
+              "opacity": "1"
+            }
+          ],
+          "animations": 0
+        },
+        "middle": {
+          "theme": "dark",
+          "label": "Włącz jasny motyw",
+          "parts": [
+            {
+              "part": "theme-symbol",
+              "transform": "matrix(0.990003, -0.141049, 0.141049, 0.990003, 0, 0)",
+              "opacity": "1"
+            },
+            {
+              "part": "theme-cutout",
+              "transform": "matrix(1, 0, 0, 1, -4.32457, 4.32457)",
+              "opacity": "1"
+            },
+            {
+              "part": "theme-rays",
+              "transform": "matrix(0.664929, 0.300586, -0.300586, 0.664929, 0, 0)",
+              "opacity": "0.423707"
+            },
+            {
+              "part": "theme-disc",
+              "transform": "matrix(0.816228, 0, 0, 0.816228, 0, 0)",
+              "opacity": "1"
+            }
+          ],
+          "animations": 48
+        },
+        "final": {
+          "theme": "dark",
+          "label": "Włącz jasny motyw",
+          "parts": [
+            {
+              "part": "theme-symbol",
+              "transform": "matrix(0.965926, -0.258819, 0.258819, 0.965926, 0, 0)",
+              "opacity": "1"
+            },
+            {
+              "part": "theme-cutout",
+              "transform": "matrix(1, 0, 0, 1, -8, 8)",
+              "opacity": "1"
+            },
+            {
+              "part": "theme-rays",
+              "transform": "matrix(0.353553, 0.353553, -0.353553, 0.353553, 0, 0)",
+              "opacity": "0"
+            },
+            {
+              "part": "theme-disc",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "opacity": "1"
+            }
+          ],
+          "animations": 0
+        }
+      },
+      {
+        "destination": "light",
+        "initial": {
+          "theme": "dark",
+          "label": "Włącz jasny motyw",
+          "parts": [
+            {
+              "part": "theme-symbol",
+              "transform": "matrix(0.965926, -0.258819, 0.258819, 0.965926, 0, 0)",
+              "opacity": "1"
+            },
+            {
+              "part": "theme-cutout",
+              "transform": "matrix(1, 0, 0, 1, -8, 8)",
+              "opacity": "1"
+            },
+            {
+              "part": "theme-rays",
+              "transform": "matrix(0.353553, 0.353553, -0.353553, 0.353553, 0, 0)",
+              "opacity": "0"
+            },
+            {
+              "part": "theme-disc",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)",
+              "opacity": "1"
+            }
+          ],
+          "animations": 0
+        },
+        "middle": {
+          "theme": "light",
+          "label": "Włącz ciemny motyw",
+          "parts": [
+            {
+              "part": "theme-symbol",
+              "transform": "matrix(0.995401, -0.0957983, 0.0957983, 0.995401, 0, 0)",
+              "opacity": "1"
+            },
+            {
+              "part": "theme-cutout",
+              "transform": "matrix(1, 0, 0, 1, -2.93188, 2.93188)",
+              "opacity": "1"
+            },
+            {
+              "part": "theme-rays",
+              "transform": "matrix(0.783157, 0.23186, -0.23186, 0.783157, 0, 0)",
+              "opacity": "0.703851"
+            },
+            {
+              "part": "theme-disc",
+              "transform": "matrix(0.746594, 0, 0, 0.746594, 0, 0)",
+              "opacity": "1"
+            }
+          ],
+          "animations": 48
+        },
+        "final": {
+          "theme": "light",
+          "label": "Włącz ciemny motyw",
+          "parts": [
+            {
+              "part": "theme-symbol",
+              "transform": "none",
+              "opacity": "1"
+            },
+            {
+              "part": "theme-cutout",
+              "transform": "none",
+              "opacity": "1"
+            },
+            {
+              "part": "theme-rays",
+              "transform": "none",
+              "opacity": "1"
+            },
+            {
+              "part": "theme-disc",
+              "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)",
+              "opacity": "1"
+            }
+          ],
+          "animations": 0
+        }
+      }
+    ]
+  },
+  "contrast": [
+    {
+      "theme": "light",
+      "name": "company label",
+      "fg": "rgb(95, 101, 97)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 5.96
+    },
+    {
+      "theme": "light",
+      "name": "company name",
+      "fg": "rgb(35, 39, 37)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 15.13
+    },
+    {
+      "theme": "light",
+      "name": "theme symbol",
+      "fg": "rgb(119, 87, 24)",
+      "bg": "rgb(241, 242, 239)",
+      "ratio": 5.91
+    },
+    {
+      "theme": "light",
+      "name": "theme symbol hover",
+      "fg": "rgb(119, 87, 24)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 6.64
+    },
+    {
+      "theme": "light",
+      "name": "body",
+      "fg": "rgb(35, 39, 37)",
+      "bg": "rgb(241, 242, 239)",
+      "ratio": 13.46
+    },
+    {
+      "theme": "light",
+      "name": "muted page",
+      "fg": "rgb(95, 101, 97)",
+      "bg": "rgb(241, 242, 239)",
+      "ratio": 5.31
+    },
+    {
+      "theme": "light",
+      "name": "muted surface",
+      "fg": "rgb(95, 101, 97)",
+      "bg": "rgb(241, 242, 239)",
+      "ratio": 5.31
+    },
+    {
+      "theme": "light",
+      "name": "contact email",
+      "fg": "rgb(119, 87, 24)",
+      "bg": "rgb(241, 242, 239)",
+      "ratio": 5.91
+    },
+    {
+      "theme": "light",
+      "name": "contact phone",
+      "fg": "rgb(35, 39, 37)",
+      "bg": "rgb(241, 242, 239)",
+      "ratio": 13.46
+    },
+    {
+      "theme": "light",
+      "name": "office text/link",
+      "fg": "rgb(48, 41, 27)",
+      "bg": "rgb(229, 196, 119)",
+      "ratio": 8.57
+    },
+    {
+      "theme": "light",
+      "name": "disclosure border",
+      "fg": "rgb(114, 123, 116)",
+      "bg": "rgb(241, 242, 239)",
+      "ratio": 3.89
+    },
+    {
+      "theme": "light",
+      "name": "control border",
+      "fg": "rgb(114, 123, 116)",
+      "bg": "rgb(241, 242, 239)",
+      "ratio": 3.89
+    },
+    {
+      "theme": "light",
+      "name": "focus page",
+      "fg": "rgb(21, 93, 168)",
+      "bg": "rgb(241, 242, 239)",
+      "ratio": 5.91
+    },
+    {
+      "theme": "light",
+      "name": "focus office",
+      "fg": "rgb(35, 76, 124)",
+      "bg": "rgb(229, 196, 119)",
+      "ratio": 5.21
+    },
+    {
+      "theme": "dark",
+      "name": "company label",
+      "fg": "rgb(184, 193, 185)",
+      "bg": "rgb(32, 39, 34)",
+      "ratio": 8.27
+    },
+    {
+      "theme": "dark",
+      "name": "company name",
+      "fg": "rgb(240, 242, 237)",
+      "bg": "rgb(32, 39, 34)",
+      "ratio": 13.55
+    },
+    {
+      "theme": "dark",
+      "name": "theme symbol",
+      "fg": "rgb(229, 196, 119)",
+      "bg": "rgb(23, 28, 25)",
+      "ratio": 10.27
+    },
+    {
+      "theme": "dark",
+      "name": "theme symbol hover",
+      "fg": "rgb(229, 196, 119)",
+      "bg": "rgb(32, 39, 34)",
+      "ratio": 9.09
+    },
+    {
+      "theme": "dark",
+      "name": "body",
+      "fg": "rgb(240, 242, 237)",
+      "bg": "rgb(23, 28, 25)",
+      "ratio": 15.31
+    },
+    {
+      "theme": "dark",
+      "name": "muted page",
+      "fg": "rgb(184, 193, 185)",
+      "bg": "rgb(23, 28, 25)",
+      "ratio": 9.34
+    },
+    {
+      "theme": "dark",
+      "name": "muted surface",
+      "fg": "rgb(184, 193, 185)",
+      "bg": "rgb(23, 28, 25)",
+      "ratio": 9.34
+    },
+    {
+      "theme": "dark",
+      "name": "contact email",
+      "fg": "rgb(229, 196, 119)",
+      "bg": "rgb(23, 28, 25)",
+      "ratio": 10.27
+    },
+    {
+      "theme": "dark",
+      "name": "contact phone",
+      "fg": "rgb(240, 242, 237)",
+      "bg": "rgb(23, 28, 25)",
+      "ratio": 15.31
+    },
+    {
+      "theme": "dark",
+      "name": "office text/link",
+      "fg": "rgb(48, 41, 27)",
+      "bg": "rgb(229, 196, 119)",
+      "ratio": 8.57
+    },
+    {
+      "theme": "dark",
+      "name": "disclosure border",
+      "fg": "rgb(148, 161, 149)",
+      "bg": "rgb(23, 28, 25)",
+      "ratio": 6.4
+    },
+    {
+      "theme": "dark",
+      "name": "control border",
+      "fg": "rgb(148, 161, 149)",
+      "bg": "rgb(23, 28, 25)",
+      "ratio": 6.4
+    },
+    {
+      "theme": "dark",
+      "name": "focus page",
+      "fg": "rgb(155, 201, 255)",
+      "bg": "rgb(23, 28, 25)",
+      "ratio": 10.02
+    },
+    {
+      "theme": "dark",
+      "name": "focus office",
+      "fg": "rgb(35, 76, 124)",
+      "bg": "rgb(229, 196, 119)",
+      "ratio": 5.21
+    }
+  ],
+  "zoom": [
+    {
+      "stage": "before",
+      "theme": "light",
+      "metrics": {
+        "width": 640,
+        "height": 450,
+        "outer": 1280,
+        "dpr": 2,
+        "scroll": 640,
+        "contacts": 10
+      }
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "metrics": {
+        "width": 640,
+        "height": 450,
+        "outer": 1280,
+        "dpr": 2,
+        "scroll": 640,
+        "contacts": 10
+      }
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "metrics": {
+        "width": 640,
+        "height": 450,
+        "outer": 1280,
+        "dpr": 2,
+        "scroll": 640,
+        "contacts": 10
+      }
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "metrics": {
+        "width": 640,
+        "height": 450,
+        "outer": 1280,
+        "dpr": 2,
+        "scroll": 640,
+        "contacts": 10
+      }
+    },
+    {
+      "stage": "before",
+      "theme": "light",
+      "metrics": {
+        "width": 320,
+        "height": 450,
+        "outer": 640,
+        "dpr": 2,
+        "scroll": 320,
+        "contacts": 10
+      }
+    },
+    {
+      "stage": "after",
+      "theme": "light",
+      "metrics": {
+        "width": 320,
+        "height": 450,
+        "outer": 640,
+        "dpr": 2,
+        "scroll": 320,
+        "contacts": 10
+      }
+    },
+    {
+      "stage": "before",
+      "theme": "dark",
+      "metrics": {
+        "width": 320,
+        "height": 450,
+        "outer": 640,
+        "dpr": 2,
+        "scroll": 320,
+        "contacts": 10
+      }
+    },
+    {
+      "stage": "after",
+      "theme": "dark",
+      "metrics": {
+        "width": 320,
+        "height": 450,
+        "outer": 640,
+        "dpr": 2,
+        "scroll": 320,
+        "contacts": 10
+      }
+    }
+  ]
+}
