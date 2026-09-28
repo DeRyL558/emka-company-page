@@ -1,101 +1,104 @@
-# Weryfikacja finalnego wariantu — 28.09.2026
+# Weryfikacja wariantu z rozwijanymi kontaktami — 28.09.2026
 
-Badany kod: **`1c555258bce9b3bb48a2b3779401d114d70c0c6f`**.
-Dokładny merge-base: `aff0f14e43a50e2bf190cf6ecd0a60a56db17153`.
-Poprzedni wariant: `1637575cfa16c2d1e1ce0c9ba7c780ad25ea15a9`.
-Kolejny commit uzupełnia wyłącznie dokumentację i obrazy. SHA-256 źródeł
-znajdują się w [zapisie wyników](qa-results-v2.json) i [review](review-v2.md).
+Badany kod: **`b8681ee7692ab7f9d21d59bfbba596524e98e130`**. Dokładny merge-base i aktualny origin/main:
+`aff0f14e43a50e2bf190cf6ecd0a60a56db17153`. Poprzedni wariant: `d8edaaa654af3b1834633bf71b7ee0e3bd6a189c`.
+Commit po implementacji dodaje wyłącznie dokumentację i screenshoty;
+[QA JSON](qa-results-v3.json) zawiera SHA-256 czterech plików HTML/CSS/JS.
 
-[Audyt bazowy](audit.md) · [Porównania aktualne](screenshots-v2.md) ·
-[Walidacja pierwszej iteracji](validation-v1.md)
+[Audyt bazy](audit.md) · [46 screenshotów](screenshots-v3.md) ·
+[Niezależne review](review-v3.md) · [Historyczne wyniki v2](validation-v2.md).
 
-## Co oceniono
+## Wynik i zachowanie
 
-Większy tytuł szeryfowy nawiązuje do istniejącego logo. Złote biuro jest jedynym
-mocnym polem akcentowym. Wspólna powierzchnia zespołu oraz kolumna tytułów
-budują hierarchię bez otaczania każdej osoby kartą. Nazwa firmy pozostaje
-nad tytułem branży, bez dopisywania usług lub sloganów. To decyzje projektowe,
-nie dowód dotyczący autorstwa starej strony.
+Motyw przenika przez 420 ms; równolegle symbol przesuwa się i obraca, a warianty
+logo przenikają. To przejścia rzeczywistych elementów CSS, bez nakładki obrazu
+przechwytującej kliknięcia. Kontakty działów są domyślnie zwinięte w natywnym
+`details`. Oba linki do #kontakt rozwijają listę, ustawiają fokus na summary
+i płynnie przewijają po zmianie jej wysokości. Biuro pozostaje stale widoczne.
 
-Animacja dotyczy wyłącznie kontrolki motywu (obrót symbolu 260 ms), reakcji
-nawigacji/tła przycisku (160 ms) i strzałki odnośnika (180 ms, 3 px). Wszystkie
-są wyłączone przy prefers-reduced-motion. Nie ma wejść/scroll reveal, parallaxu,
-zmiany skali elementów ani pełnoekranowej animacji. Motyw stosuje się od razu.
+Pełna nazwa firmy, NIP i REGON poprzedzają adresy w DOM i renderze. Usunięto
+powtórzenie nazwy nad h1. Copyright zmieniono z 2025 na aktualny 2026.
+Nie zmieniono informacji o założeniu w 2001 r. ani danych firmy/kontaktów.
 
-## Kontrole wykonane
+## Wykonane kontrole
 
-Chromium 151.0.7922.34 na macOS, Playwright i ręczny ogląd rzeczywistych renderów.
+Chromium 151.0.7922.34 na macOS, rzeczywisty render przez Playwright,
+automatyczne pomiary i ręczny ogląd screenshotów. Repo nie ma runnera ani CI;
+narzędzia QA pozostają poza projektem, bez nowych zależności runtime.
 
-| Kontrola | Wynik finalnego kodu |
+| Kontrola | Wynik |
 | --- | --- |
-| 1440×900, 1280×900, 768×1024, 390×844, 320×844 × light/dark | 10/10 bez poziomego overflow, błędów JS/konsoli i niezaładowanych zasobów |
-| Biuro | E-mail widoczny w pierwszym ekranie 390×844 i 320×844; pozostałe kontakty jawne |
-| Dane względem merge-base | 6 mailto + 4 tel: identyczne href/teksty; 6 przypisań osoby/roli/działu zgodnych; nazwa, NIP, REGON, oba adresy, rok i opis siedziby zachowane |
-| Semantyka | Jeden h1, header/main/footer, skip link, nagłówki działów, listy osób, dl danych |
-| Klawiatura | Pełna kolejność 15 kontrolek/odnośników z widocznym fokusem 3 px; Enter/Spacja działają; skip link przenosi fokus do main, następny Tab do biura |
-| Dotyk | Wszystkie widoczne linki i przycisk ≥44×44 px w 10 kombinacjach |
-| No-JS | Oba motywy systemowe, cała treść i 10 kontaktów; nieaktywny przycisk ukryty |
-| Storage | Niedostępny/błędny zapis nie blokuje; preferencja działa i pamięta się po odświeżeniu; ręczny wybór wygrywa z systemowym |
-| Szybka mysz | 2 rzeczywiste kliknięcia co 100 ms: 2/2; 9 co 30 ms: 9/9. Motyw, aria-pressed i zapis zgodne, fokus zachowany |
-| Szybka klawiatura | 9 naciśnięć Spacji: końcowy motyw i aria-pressed zgodne |
-| Reduced motion | 0 animacji, transition-duration: 0s, motyw stosowany natychmiast |
-| Logo | Oryginalne oba pliki bez zmian, właściwy widoczny wariant; multiply w jasnym wtapia białe tło, nie zmienia geometrii |
-| Zasoby / metadane | Tylko lokalne zasoby runtime; favicon i publiczny og:image HTTP 200; CNAME/publikacja/obrazy bez zmian |
+| 1440×900, 1280×900, 768×1024, 390×844, 320×844 × light/dark | Brak poziomego overflow w stanach zwiniętym i rozwiniętym; brak błędów JS/konsoli i brakujących zasobów |
+| Biuro na telefonie | E-mail w pierwszym ekranie 390×844 i 320×844; bez rozwijania |
+| Dane wobec merge-base | 6 mailto + 4 tel: identyczne wartości i teksty, 6 zgodnych przypisań; nazwa, NIP, REGON, oba adresy i opis siedziby zachowane |
+| Klawiatura | Kolejność 16 elementów przy otwartych kontaktach; fokus 3 px, skip link, Enter/Spacja na motywie i summary; następny Tab dociera do pierwszego kontaktu |
+| Dotyk | Widoczne odnośniki/przycisk ≥44×44 px; summary jest całym szerokim wierszem o wysokości ≥100 px |
+| Nawigacja | Oba odnośniki #kontakt, bezpośredni hash, powrót w historii i szybka zmiana celu: PASS |
+| Ruch kontaktów | Zmierzone pośrednie wysokości podczas otwierania i zamykania; smooth scroll z pośrednimi pozycjami, poprawny końcowy fokus |
+| Motyw | Po 100 ms kolor tła pośredni rgb(197,198,195), między jasnym rgb(241,242,239) i ciemnym rgb(23,28,25); symbol 420 ms |
+| Szybkie akcje | 2 kliknięcia co 100 ms i 9 co 30 ms: wszystkie odebrane; 9 szybkich Spacji: zgodne DOM/aria/storage |
+| Reduced motion | Brak animacji, duration 0s, scroll-behavior auto; funkcje działają |
+| No-JS, oba motywy | Biuro dostępne, summary natywnie otwiera pozostałe 9 odnośników, systemowy motyw; nieaktywny switch ukryty |
+| Storage | Niedostępny i błędny zapis nie blokują strony; zapis po odświeżeniu i pierwszeństwo jawnego wyboru nad systemem: PASS |
+| Logo / zasoby | Oryginalne pliki/proporcje; jeden opis dostępny dla przenikających wariantów; tylko lokalne zasoby runtime |
+| Metadane | Favicon i publiczny absolutny og:image HTTP 200; domena/CNAME/publikacja bez zmian |
+| Podgląd offline | Motyw, kontakt, nawigacja przez file:// i konsola: PASS |
 
-**Powiększenie:** natywny zoom Chromium 200%, potwierdzony devicePixelRatio=2
-oraz innerWidth=outerWidth/2: viewporty 640×450 i 320×450 CSS px, oba motywy,
-bez overflow i utraty kontaktów. Zapis przez Page.captureScreenshot uwzględnia
-rzeczywisty rozmiar powiększonego dokumentu. Osobno reviewer sprawdził
-powiększenie samego tekstu 200% przy 390/320 px, oba motywy: brak overflow.
-Nie utożsamiamy tych dwóch prób.
+**Powiększenie:** natywny zoom Chromium 200% (devicePixelRatio=2,
+innerWidth=outerWidth/2): 640×450 i 320×450 CSS px, oba motywy, otwarte kontakty,
+bez overflow i utraty 10 odnośników. Osobno tekst 200% przy 390/320 px, oba
+motywy: PASS. Reviewer dodatkowo sprawdził tekst 200% na desktopie 1440 px.
+
+HTML Validate 11.16.1 recommended: 0 błędów/ostrzeżeń; wyłączona tylko reguła
+stylistyczna tel-non-breaking, aby zachować bazowy zapis telefonów.
+CSS Tree 3.2.1, `node --check` obu JS i `git diff --check`: PASS.
 
 ## Dostępność i kontrast
 
-axe-core 4.10.3: **0 violations** w 10 wariantach, 38 reguł zaliczonych na render.
-Jeden incomplete nadal dotyczy pomocniczej strzałki ↓. Ma ona kolor tekstu
-biura, kontrast 8,57:1 i aria-hidden; link ma pełną nazwę tekstową.
+axe-core 4.10.3: **0 violations** w 10 renderach z otwartymi kontaktami
+(45 zaliczonych reguł w każdym) oraz dwóch z kontaktami zwiniętymi.
+Jeden incomplete dla dekoracyjnej strzałki biura: aria-hidden, pełny tekst linku,
+ręcznie potwierdzony kontrast 8,57:1. To nie jest pełny audyt WCAG.
 
-| Para z faktyczną powierzchnią | Jasny | Ciemny |
+Kontrast w końcowych, nieruchomych stanach, obliczony z computed styles:
+
+| Para | Jasny | Ciemny |
 | --- | ---: | ---: |
-| Główny tekst / tło strony | 13,46:1 | 15,31:1 |
-| Pomocniczy / tło strony | 5,31:1 | 9,34:1 |
-| Pomocniczy / panel kontaktów | 5,96:1 | 8,27:1 |
-| E-mail / panel kontaktów | 6,64:1 | 9,09:1 |
-| Telefon / panel kontaktów | 15,13:1 | 13,55:1 |
-| Tekst i link / złote biuro | 8,57:1 | 8,57:1 |
-| Granica kontrolki / tło strony | 3,89:1 | 6,40:1 |
-| Fokus / tło strony | 5,91:1 | 10,02:1 |
-| Fokus / złote biuro | 5,21:1 | 5,21:1 |
+| Tekst główny / strona | 13,46:1 | 15,31:1 |
+| Tekst pomocniczy / strona | 5,31:1 | 9,34:1 |
+| Tekst pomocniczy / kontakty | 5,96:1 | 8,27:1 |
+| E-mail / kontakty | 6,64:1 | 9,09:1 |
+| Telefon / kontakty | 15,13:1 | 13,55:1 |
+| Tekst i link / biuro | 8,57:1 | 8,57:1 |
+| Granica switcha / strona | 3,89:1 | 3,80:1 |
+| Granica rozwijania / panel | 4,37:1 | 5,67:1 |
+| Fokus / strona | 5,91:1 | 10,02:1 |
+| Fokus / biuro | 5,21:1 | 5,21:1 |
 
-Pomiary z computed styles / luminancji sRGB i ogląd źródeł/renderów.
-Automat oraz powyższe pomiary nie są pełnym audytem WCAG.
+## Niezależne review
 
-## Walidacja i review
+Świeży reviewer sam przeczytał diff i obejrzał własne rendery. Znalazł błąd
+szybkiego przejścia Kontakt → Dane firmy podczas ekspansji. Naprawiono go
+w tej samej gałęzi: każdy cel czeka na stabilny układ, ostatnia nawigacja wygrywa.
+Retest 9/9 na 1440/390/320 px; **brak otwartych potwierdzonych usterek**.
+[Raport, zakres i ograniczenia](review-v3.md).
 
-HTML Validate 11.16.1 recommended: 0 błędów i ostrzeżeń; wyłączona wyłącznie
-stylistyczna reguła tel-non-breaking, aby zachować zapis telefonów bazy.
-CSS Tree 3.2.1, node --check theme.js i git diff --check: PASS.
-Repo nie ma runnera ani CI; narzędzia QA są poza repo, brak nowych zależności.
+## Niewykonane kontrole, ryzyko i odbiór
 
-Świeży reviewer sam przeczytał diff i obejrzał własne 8 renderów. Potwierdzone
-problemy z prototypu zostały naprawione w tej samej gałęzi: blokowanie szybkich
-kliknięć, brak spacji po składanym br oraz overflow przy dużym tekście.
-Finalny retest: **brak otwartych problemów blokujących**. [Raport](review-v2.md).
+Bez Safari, Firefox, fizycznego telefonu/klawiatury, czytnika ekranu i badań
+użytkowników. Nie aktywowano mailto/tel, nie badano dostarczalności ani danych
+w rejestrach. Bez merge, wdrożenia, sprawdzania produkcyjnego cache i hosted CI.
 
-## Ograniczenia i ryzyko
+Starsze przeglądarki bez interpolate-size/::details-content otworzą natywne
+kontakty bez animacji wysokości; nie testowano takiej przeglądarki. Bez JS link
+do kontaktu przewija do summary, a użytkownik otwiera listę natywnie. Ruch
+wyłączony preferencją reduced-motion jest zamierzonym zachowaniem.
 
-Bez Safari, Firefox, fizycznego telefonu, czytnika ekranu i badania użytkowników.
-Nie inicjowano połączeń/maili; nie badano dostarczalności, danych rejestrowych,
-produkcji ani cache podglądów społecznościowych. Nie wykonano merge lub
-wdrożenia. Brak CI nie oznacza zaliczonych checks.
+Ryzyko wdrożenia: publikacja musi dostarczyć HTML razem z oboma JS i CSS;
+systemowe fonty mogą nieco różnić się między platformami. Niejednoznaczność
+„siedziba Stargard” / „Adres Żarowo” zachowana bez interpretacji.
 
-Ryzyko: odbiór zmienionej typografii i kolejności informacji; różnice systemowych
-fontów między platformami; publikacja musi zawierać nowe lokalne CSS/JS wraz
-z HTML. Podstawowa treść i kontakt pozostają dostępne bez JS.
-Niejasność opisu siedziby Stargard / Adres Żarowo zachowana bez interpretacji.
-
-Odbiór ręczny: rozpoznaj firmę i biuro na telefonie; znajdź transport/spedycję/
-księgowość; przejdź Tabem i przełącz motyw Spacją/Enterem oraz szybko myszą;
-sprawdź zapis po odświeżeniu, oba motywy przy 200%, 320 CSS px i bez JS;
-porównaj wszystkie dane/odnośniki bez ich aktywowania; po publikacji sprawdź
-HTTP 200 HTML/CSS/JS/logo/favicon i konsolę.
+Odbiór: na desktopie i telefonie znajdź biuro; otwórz działy każdym odnośnikiem,
+zamknij summary; przejdź klawiaturą; przełącz motyw normalnie i szybko,
+odśwież; sprawdź kolejność nazwa/NIP/REGON/adresy oraz 2026; sprawdź 200%,
+320 CSS px, reduced-motion i no-JS. Po publikacji sprawdź lokalne zasoby i konsolę.
