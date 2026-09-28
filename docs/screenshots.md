@@ -1,4 +1,6 @@
-# Porównania przed / po
+# Porównania przed / po — pierwsza iteracja
+
+Aktualny wariant: [drugie porównanie](screenshots-v2.md).
 
 Baza `aff0f14`; wynik `000f50a`. Ten sam viewport, skala urządzenia 1 i motyw.
 PNG obejmują całą stronę, dlatego wysokość pliku zależy od treści.
