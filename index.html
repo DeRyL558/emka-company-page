@@ -1,264 +1,140 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>eMKa Monika Kogowska — Transport i Spedycja</title>
-  <meta name="description" content="Firma transportowo-spedycyjna założona w 2001 roku z siedzibą w Stargardzie. eMKa Monika Kogowska." />
+  <meta name="description" content="Firma transportowo-spedycyjna założona w 2001 roku z siedzibą w Stargardzie. eMKa Monika Kogowska.">
+  <link rel="canonical" href="https://emka-ts.eu/">
   <link rel="icon" href="favicon.ico">
-  <meta property="og:title" content="eMKa Monika Kogowska" />
-  <meta property="og:description" content="Transport &amp; Spedycja — od 2001 roku." />
-  <meta property="og:image" content="assets/logo.png" />
-  <style>
-    :root {
-      --bg: #f7f4ef;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --border: #e8e3db;
-      --gold: #c8a24a;
-      --gold-deep: #8f6e1d;
-      --radius: 18px;
-      --radius-sm: 14px;
-      --shadow: 0 6px 20px rgba(17, 24, 39, .08);
-      --logo-src: url('assets/logo.png');
-      --link: var(--gold-deep);
-    }
-    :root[data-theme="dark"] {
-      --bg: #121417;
-      --card: #181b20;
-      --text: #f3f4f6;
-      --muted: #9aa4b2;
-      --border: #2a2f36;
-      --gold: #d3b15a;
-      --gold-deep: #bf9530;
-      --shadow: 0 8px 24px rgba(0,0,0,.35);
-      --logo-src: url('assets/logo-dark.png');
-      --link: #e9c56f;
-    }
-    :root { color-scheme: light; }
-    :root[data-theme="dark"] { color-scheme: dark; }
-    * { box-sizing: border-box; }
-    @media (prefers-reduced-motion: no-preference) {
-    html { transition: background-color .15s ease, color .15s ease; }
-    }
-    html, body {
-      margin: 0; padding: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { max-width: 980px; margin: 0 auto; padding: 28px 20px 40px; }
-    
-    header.hero {
-      background: var(--card);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      border-radius: var(--radius);
-      padding: 20px 20px;
-      display: grid; grid-template-columns: 120px 1fr auto; gap: 18px; align-items: center;
-    }
-    .logo-img { width: 120px; height: 120px; background-image: var(--logo-src); background-size: contain; background-repeat: no-repeat; background-position: center; }
-    .brand h1 { margin: 0; font-size: clamp(26px, 4.2vw, 40px); letter-spacing: .3px; }
-    .tagline { margin-top: 6px; color: var(--muted); font-size: 15px; }
-    .gold-rule { height: 3px; background: linear-gradient(90deg, rgba(200,162,74,.85), rgba(200,162,74,.35) 50%, rgba(200,162,74,.85)); border-radius: 2px; margin-top: 12px; }
-
-    .theme-toggle {
-      display: inline-flex; align-items: center; justify-content: center;
-      width: 36px; height: 36px; border-radius: 50%;
-      border: 1px solid var(--border); background: var(--card); color: var(--text);
-      box-shadow: var(--shadow); cursor: pointer;
-    }
-    .theme-toggle:hover { filter: brightness(1.05); }
-    .theme-toggle svg { width: 18px; height: 18px; }
-    
-    .cards { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; margin-top: 18px; }
-    .card { grid-column: span 12; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 20px; box-shadow: var(--shadow); }
-    @media (min-width: 860px) { .card.half { grid-column: span 6; } }
-    .section-title { font-size: 18px; margin: 0 0 12px; color: var(--gold-deep); letter-spacing: .25px; display: inline-flex; align-items: center; gap: 10px; }
-    .section-title::after { content: ""; display: inline-block; width: 54px; height: 2px; background: linear-gradient(90deg, var(--gold), transparent); opacity: .9; border-radius: 1px; }
-
-    .kv { display: grid; grid-template-columns: 1fr; gap: 10px; }
-    @media (min-width: 600px) { .kv { grid-template-columns: 220px 1fr; } }
-    .kv div { padding: 8px 0; border-bottom: 1px dashed #ece6da; }
-    .kv div:last-child { border-bottom: none; }
-    .muted { color: var(--muted); }
-
-    details { border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--card); box-shadow: var(--shadow); }
-    details > summary { list-style: none; cursor: pointer; padding: 16px 18px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
-    details > summary::-webkit-details-marker { display: none; }
-    details[open] > summary { border-bottom: 1px solid var(--border); }
-    .chev { transition: transform .25s ease; }
-    details[open] .chev { transform: rotate(90deg); }
-
-    .contacts { padding: 14px 18px 8px; }
-    .contact { display: grid; grid-template-columns: 1fr; gap: 6px; padding: 14px 0; border-bottom: 1px dashed #ece6da; }
-    .contact:last-child { border-bottom: none; }
-    @media (min-width: 680px) { .contact { grid-template-columns: 1.2fr 1fr 1fr; align-items: center; } }
-    .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; background: #fbf6ec; color: #7a5a12; font-size: 12px; font-weight: 700; letter-spacing: .25px; border: 1px solid #efd9a6; }
-    .sep { height: 1px; background: #efe9dd; margin: 14px 0; }
-
-    footer { margin: 28px 0 8px; text-align: center; color: var(--muted); font-size: 14px; }
-    
-    .kv div:nth-last-child(-n+2) { border-bottom: none; }
-    .contacts .contact:first-of-type { border-bottom: none;}
-    .contact.no-border { border-bottom: none;}
-  </style>
-  <script>
-  (function() {
-    const root = document.documentElement;
-    const saved = localStorage.getItem('theme');
-    const mode = (saved === 'light' || saved === 'dark')
-      ? saved
-      : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    root.setAttribute('data-theme', mode);
-  })();
-  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:url" content="https://emka-ts.eu/">
+  <meta property="og:title" content="eMKa Monika Kogowska">
+  <meta property="og:description" content="Transport &amp; Spedycja — od 2001 roku.">
+  <meta property="og:image" content="https://emka-ts.eu/assets/logo.png">
+  <meta property="og:image:width" content="1812">
+  <meta property="og:image:height" content="685">
+  <meta property="og:image:alt" content="Logo eMKa">
+  <script src="assets/theme.js"></script>
+  <script src="assets/navigation.js" defer></script>
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-      <circle cx="12" cy="12" r="4" stroke-width="1.8"/>
-      <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5" stroke-width="1.8" stroke-linecap="round"/>
-    </symbol>
-    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-width="1.8"/>
-    </symbol>
-  </svg>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header wrap">
+    <div class="brand-mark" role="img" aria-label="Logo eMKa">
+      <img class="logo logo-light" src="assets/logo.png" width="1812" height="685" alt="">
+      <img class="logo logo-dark" src="assets/logo-dark.png" width="1812" height="685" alt="">
+    </div>
+    <nav aria-label="Nawigacja główna">
+      <a href="#kontakt">Kontakt</a>
+      <a href="#dane">Dane firmy</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Włącz ciemny motyw" title="Włącz ciemny motyw" hidden>
+      <svg class="theme-symbol" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+        <defs>
+          <mask id="theme-cutout" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+            <rect width="24" height="24" fill="#fff"/>
+            <circle class="theme-cutout" cx="24" cy="0" r="7.5" fill="#000"/>
+          </mask>
+        </defs>
+        <g class="theme-rays" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M12 1.5v2M12 20.5v2M1.5 12h2M20.5 12h2M4.58 4.58L6 6M18 18l1.42 1.42M4.58 19.42L6 18M18 6l1.42-1.42"/>
+        </g>
+        <g mask="url(#theme-cutout)">
+          <circle class="theme-disc" cx="12" cy="12" r="9" fill="currentColor"/>
+        </g>
+      </svg>
+    </button>
+  </header>
 
-  <div class="container">
-    <header class="hero">
-      <div class="logo-img" aria-label="Logo eMKa"></div>
-      <div class="brand">
-        <h1>eMKa Monika Kogowska</h1>
-        <div class="tagline">Transport &amp; Spedycja — od 2001 roku</div>
-        <div class="gold-rule" aria-hidden="true"></div>
+  <main id="main" class="wrap" tabindex="-1">
+    <section class="introduction" aria-labelledby="company-name">
+      <div>
+        <h1 id="company-name">Transport<br><em>i spedycja.</em></h1>
+        <p class="introduction-copy">Od 2001 roku. Firma transportowo-spedycyjna<br class="desktop-break"> z siedzibą w Stargardzie.</p>
       </div>
-        <button class="theme-toggle" id="themeBtn" type="button" aria-label="Przełącz motyw">
-          <svg><use href="#i-sun"/></svg>
-        </button>
-    </header>
+      <section class="office" aria-labelledby="office-title">
+        <h2 id="office-title">Biuro</h2>
+        <p>Zapytania ogólne</p>
+        <a class="office-email" href="mailto:office@emka-ts.eu">office@emka-ts.eu</a>
+        <a class="department-link" href="#kontakt">Kontakty do działów <span aria-hidden="true">↓</span></a>
+      </section>
+    </section>
 
-    <section class="cards">
-      <div class="card half">
-        <h2 class="section-title">O firmie</h2>
-        <p>Firma transportowo-spedycyjna założona w 2001 roku z siedzibą w Stargardzie.</p>
-      </div>
-      <div class="card half">
-        <h2 class="section-title">Dane rejestrowe</h2>
-        <div class="kv">
-          <div><strong>Nazwa</strong></div><div>eMKa Monika Kogowska</div>
-          <div><strong>NIP</strong></div><div>8541677379</div>
-          <div><strong>REGON</strong></div><div>511394302</div>
+    <section id="dane" class="company-data section" tabindex="-1" aria-labelledby="data-title">
+      <div class="company-profile">
+        <div>
+          <p class="section-label">Dane firmy</p>
+          <h2 id="data-title">eMKa Monika Kogowska</h2>
         </div>
+        <dl class="company-register">
+          <div><dt>NIP</dt><dd>8541677379</dd></div>
+          <div><dt>REGON</dt><dd>511394302</dd></div>
+        </dl>
       </div>
-
-      <div class="card half">
-        <h2 class="section-title">Adres</h2>
-        <p>
-          <strong>Diamentowa 11</strong><br/>
-          73-110 Żarowo
-        </p>
-      </div>
-      <div class="card half">
-        <h2 class="section-title">Adres korespondencyjny</h2>
-        <p>
-          <strong>Gdańska 1</strong><br/>
-          73-110 Stargard
-        </p>
-      </div>
-
-      <div class="card" style="grid-column: span 12;">
-        <details>
-          <summary>
-            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Kontakt</span>
-          </summary>
-          <div class="contacts">
-            <div class="contact">
-              <div><strong>Biuro</strong> <span class="pill">Zapytania ogólne</span></div>
-              <div><a href="mailto:office@emka-ts.eu">office@emka-ts.eu</a></div>
-            </div>
-            
-            <div class="sep"></div>
-          
-            <div class="contact">
-              <div><strong>Paweł Gutowski</strong> <span class="pill">Transport</span></div>
-              <div><a href="mailto:gutowski.emka@gmail.com">gutowski.emka@gmail.com</a></div>
-              <div><a href="tel:+48600200513">+48 600 200 513</a></div>
-            </div>
-
-            <div class="contact">
-              <div><strong>Agnieszka Zielińska</strong> <span class="pill">Transport</span></div>
-              <div><a href="mailto:a.zielinska@emka-ts.eu">a.zielinska@emka-ts.eu</a></div>
-              <div><a href="tel:+48604138909">+48 604 138 909</a></div>
-            </div>
-
-            <div class="contact">
-              <div><strong>Joanna Zwolińska</strong> <span class="pill">Spedycja</span></div>
-              <div><a href="mailto:j.zwolinska@emka-ts.eu">j.zwolinska@emka-ts.eu</a></div>
-              <div><a href="tel:+48505453133">+48 505 453 133</a></div>
-            </div>
-
-            <div class="contact no-border">
-              <div><strong>Aleksandra Zwolińska</strong> <span class="pill">Spedycja</span></div>
-              <div><a href="mailto:a.zwolinska@emka-ts.eu">a.zwolinska@emka-ts.eu</a></div>
-              <div><a href="tel:+48734171987">+48 734 171 987</a></div>
-            </div>
-
-            <div class="sep"></div>
-            <div class="contact">
-              <div><strong>Księgowość</strong> <span class="pill">Faktury / Płatności</span></div>
-              <div><a href="mailto:accounting@emka-ts.eu">accounting@emka-ts.eu</a></div>
-            </div>
-          </div>
-        </details>
+      <div class="company-addresses">
+        <section aria-labelledby="address-title">
+          <h3 id="address-title">Adres</h3>
+          <address>Diamentowa 11<br>73-110 Żarowo</address>
+        </section>
+        <section aria-labelledby="mailing-title">
+          <h3 id="mailing-title">Adres korespondencyjny</h3>
+          <address>Gdańska 1<br>73-110 Stargard</address>
+        </section>
       </div>
     </section>
 
-    <footer>
-      © 2025 eMKa Monika Kogowska • emka-ts.eu
-    </footer>
-  </div>
-
-  <script>
-  const root = document.documentElement;
-  const btn  = document.getElementById('themeBtn');
-
-  function initialTheme() {
-    const saved = localStorage.getItem('theme');
-    if (saved === 'light' || saved === 'dark') return saved;
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark' : 'light';
-  }
-
-  function applyTheme(mode) {
-    if (mode === 'dark') {
-      root.setAttribute('data-theme', 'dark');
-      btn.querySelector('use').setAttribute('href', '#i-moon');
-      btn.title = 'Motyw: Ciemny';
-    } else {
-      root.setAttribute('data-theme', 'light');
-      btn.querySelector('use').setAttribute('href', '#i-sun');
-      btn.title = 'Motyw: Jasny';
-    }
-  }
-
-  let theme = initialTheme();
-  applyTheme(theme);
-
-  btn.addEventListener('click', () => {
-    theme = (theme === 'light') ? 'dark' : 'light';
-    localStorage.setItem('theme', theme);
-    applyTheme(theme);
-  });
-</script>
+    <details id="kontakt" class="contacts section">
+      <summary class="contacts-summary">
+        <h2 id="contacts-title"><span>Kontakt</span><span class="disclosure-mark" aria-hidden="true"></span></h2>
+      </summary>
+      <div class="contact-list">
+        <section class="department" aria-labelledby="transport-title">
+          <h3 id="transport-title">Transport</h3>
+          <ul class="people">
+            <li>
+              <h4>Paweł Gutowski</h4>
+              <a href="mailto:gutowski.emka@gmail.com">gutowski.emka@gmail.com</a>
+              <a class="phone" href="tel:+48600200513">+48 600 200 513</a>
+            </li>
+            <li>
+              <h4>Agnieszka Zielińska</h4>
+              <a href="mailto:a.zielinska@emka-ts.eu">a.zielinska@emka-ts.eu</a>
+              <a class="phone" href="tel:+48604138909">+48 604 138 909</a>
+            </li>
+          </ul>
+        </section>
+        <section class="department" aria-labelledby="forwarding-title">
+          <h3 id="forwarding-title">Spedycja</h3>
+          <ul class="people">
+            <li>
+              <h4>Joanna Zwolińska</h4>
+              <a href="mailto:j.zwolinska@emka-ts.eu">j.zwolinska@emka-ts.eu</a>
+              <a class="phone" href="tel:+48505453133">+48 505 453 133</a>
+            </li>
+            <li>
+              <h4>Aleksandra Zwolińska</h4>
+              <a href="mailto:a.zwolinska@emka-ts.eu">a.zwolinska@emka-ts.eu</a>
+              <a class="phone" href="tel:+48734171987">+48 734 171 987</a>
+            </li>
+          </ul>
+        </section>
+        <section class="department accounting" aria-labelledby="accounting-title">
+          <h3 id="accounting-title">Księgowość</h3>
+          <div>
+            <p>Faktury / Płatności</p>
+            <a href="mailto:accounting@emka-ts.eu">accounting@emka-ts.eu</a>
+          </div>
+        </section>
+      </div>
+    </details>
+  </main>
+  <footer class="site-footer wrap">
+    <p>© 2026 eMKa Monika Kogowska</p>
+    <p>emka-ts.eu</p>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,188 @@
+:root {
+  color-scheme: light;
+  --page: #f1f2ef;
+  --surface: #fff;
+  --text: #232725;
+  --muted: #5f6561;
+  --line: #ccd1cb;
+  --link: #775718;
+  --hover: #f0f2ed;
+  --control: #727b74;
+  --focus: #155da8;
+  --light-logo: 1;
+  --dark-logo: 0;
+  --office: #e5c477;
+  --office-text: #30291b;
+  --office-line: #8b733e;
+  --office-focus: #234c7c;
+}
+
+/* Both explicit preferences and the no-JS system fallback use the same palette. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #171c19;
+    --surface: #202722;
+    --text: #f0f2ed;
+    --muted: #b8c1b9;
+    --line: #46524a;
+    --link: #e5c477;
+    --hover: #2b352d;
+    --control: #94a195;
+    --focus: #9bc9ff;
+    --light-logo: 0;
+    --dark-logo: 1;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #171c19;
+  --surface: #202722;
+  --text: #f0f2ed;
+  --muted: #b8c1b9;
+  --line: #46524a;
+  --link: #e5c477;
+  --hover: #2b352d;
+  --control: #94a195;
+  --focus: #9bc9ff;
+  --light-logo: 0;
+  --dark-logo: 1;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--text); font: 1rem/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+[hidden] { display: none !important; }
+.wrap { width: min(72rem, calc(100% - 4rem)); margin-inline: auto; }
+h1, h2, h3, h4, p, dl { margin: 0; }
+h1, h2, h3, h4 { line-height: 1.2; }
+h1 { overflow-wrap: anywhere; font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(3.25rem, 6vw, 5.5rem); line-height: 1.02; letter-spacing: -.055em; }
+h1 em { font-weight: 400; }
+h2 { font-weight: 550; font-size: 2rem; letter-spacing: -.04em; }
+h3 { font-size: 1rem; font-weight: 550; }
+h4 { font-size: 1.1875rem; font-weight: 600; letter-spacing: -.02em; }
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: .28em; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, button:focus-visible, summary:focus-visible, main:focus-visible, .company-data:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+a, button, summary, section, details, main { scroll-margin-block: 1.5rem; }
+.skip-link { position: absolute; left: 1rem; top: .5rem; z-index: 1; padding: .75rem; background: var(--surface); transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
+.site-header { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2.5rem; padding-block: 1.75rem; border-bottom: 1px solid var(--line); }
+.brand-mark { display: grid; width: 10.5rem; margin-right: auto; }
+.logo { grid-area: 1 / 1; width: 10.5rem; max-width: 100%; height: auto; }
+.logo-light { opacity: var(--light-logo); mix-blend-mode: multiply; }
+.logo-dark { opacity: var(--dark-logo); }
+nav { display: flex; flex-wrap: wrap; gap: 2rem; }
+nav a { display: inline-flex; align-items: center; min-height: 48px; color: var(--text); font-size: .9375rem; font-weight: 550; text-decoration-color: transparent; }
+nav a:hover, nav a:focus-visible { text-decoration-color: currentColor; }
+.theme-toggle { display: inline-flex; flex: none; align-items: center; justify-content: center; width: 3rem; height: 3rem; min-width: 48px; min-height: 48px; padding: 0; border: 1px solid var(--control); border-radius: 50%; background: transparent; color: var(--link); cursor: pointer; }
+.theme-toggle:hover { background: var(--surface); }
+.theme-symbol { flex: none; width: 1.5rem; height: 1.5rem; }
+.theme-disc, .theme-rays { transform-origin: 12px 12px; }
+.theme-disc { transform: scale(.6); }
+.theme-toggle[data-theme="dark"] .theme-symbol { transform: rotate(-15deg); }
+.theme-toggle[data-theme="dark"] .theme-disc { transform: scale(1); }
+.theme-toggle[data-theme="dark"] .theme-cutout { transform: translate(-8px, 8px); }
+.theme-toggle[data-theme="dark"] .theme-rays { opacity: 0; transform: rotate(45deg) scale(.5); }
+.introduction { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 4rem; align-items: stretch; padding-block: 3rem; }
+.introduction-copy { max-width: 45ch; margin-top: 1.5rem; color: var(--muted); }
+.office { display: flex; flex-direction: column; align-items: flex-start; padding: 2rem; background: var(--office); color: var(--office-text); border-radius: .25rem; }
+.office h2 { font-size: 1.25rem; font-weight: 600; letter-spacing: -.02em; }
+.office p { margin-top: .5rem; }
+.office a { display: inline-flex; align-items: center; max-width: 100%; min-height: 48px; padding-block: .5rem; color: inherit; }
+.office a:focus-visible { outline-color: var(--office-focus); }
+.office-email { margin-top: 1.125rem; font-size: clamp(1.25rem, 2vw, 1.625rem); font-weight: 550; letter-spacing: -.025em; }
+.office .department-link { width: 100%; justify-content: space-between; gap: .75rem; margin-top: auto; padding-top: 1.25rem; border-top: 1px solid var(--office-line); font-size: .9375rem; }
+.department-link span { flex: none; font-size: 1.375rem; }
+.section { scroll-margin-top: 2rem; }
+.contacts { margin-bottom: 2.5rem; border-block: 1px solid var(--line); }
+.contacts-summary { padding: 1.375rem 2rem; cursor: pointer; list-style: none; border-radius: inherit; }
+.contacts-summary::-webkit-details-marker { display: none; }
+.contacts-summary h2 { display: grid; grid-template-columns: minmax(0, 1fr) 44px; align-items: center; gap: 1rem; font-size: 1.5rem; }
+.disclosure-mark { position: relative; width: 44px; height: 44px; border: 1px solid var(--control); border-radius: 50%; }
+.disclosure-mark::before, .disclosure-mark::after { content: ""; position: absolute; inset: 20px 13px; height: 2px; background: var(--text); }
+.disclosure-mark::after { transform: rotate(90deg); }
+.contacts[open] .disclosure-mark::after { transform: rotate(0); }
+.contacts-summary:hover .disclosure-mark { background: var(--hover); }
+.contact-list { padding: 0 2rem 2.5rem; }
+.department { display: grid; grid-template-columns: 12rem minmax(0, 1fr); gap: 2.5rem; padding-block: 1.75rem; border-top: 1px solid var(--line); }
+.department h3 { padding-top: .25rem; color: var(--muted); }
+.people { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; padding: 0; margin: 0; list-style: none; }
+.people li { min-width: 0; padding-left: 1.25rem; border-left: 1px solid var(--line); }
+.people h4 { margin-bottom: .625rem; }
+.people a, .accounting a { display: table; max-width: 100%; min-height: 44px; padding-block: .5rem; }
+.phone { color: var(--text); font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 1rem; font-variant-numeric: tabular-nums; letter-spacing: -.035em; }
+.accounting { align-items: baseline; padding-bottom: 0; }
+.accounting > div { border-left: 1px solid var(--line); padding-left: 1.25rem; }
+.accounting p { color: var(--muted); font-size: .9375rem; }
+.company-data { padding: 2rem; margin-bottom: 2.5rem; background: var(--surface); border: 1px solid var(--line); border-radius: .25rem; }
+.company-profile { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: end; gap: 2rem; padding-bottom: 1.75rem; }
+.section-label { margin-bottom: .625rem; color: var(--muted); font-size: .9375rem; }
+.company-profile h2 { overflow-wrap: anywhere; font-size: clamp(1.5rem, 2.6vw, 2rem); line-height: 1.2; letter-spacing: -.035em; }
+.company-register { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12ch), 1fr)); gap: 1.5rem; }
+dt { margin-bottom: .25rem; color: var(--muted); font-size: .875rem; }
+dd { margin: 0; overflow-wrap: anywhere; font-size: 1.0625rem; font-variant-numeric: tabular-nums; }
+.company-addresses { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.company-addresses h3 { margin-bottom: .5rem; color: var(--muted); font-size: .875rem; }
+address { font-style: normal; }
+.site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem; padding-bottom: 2rem; color: var(--muted); font-size: .8125rem; }
+
+@media (max-width: 62rem) {
+  .introduction { gap: 2rem; }
+  .office { padding: 1.5rem; }
+  .department { grid-template-columns: 9rem minmax(0, 1fr); column-gap: 2rem; }
+  .people { gap: 1.25rem; }
+}
+@media (max-width: 50rem) {
+  .wrap { width: calc(100% - 3rem); }
+  .company-data { padding: 1.75rem; }
+  .company-profile { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .department { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+  .contacts-summary, .contact-list { padding-inline: 1.75rem; }
+  .desktop-break { display: none; }
+}
+@media (max-width: 42rem) {
+  .wrap { width: calc(100% - min(2.5rem, 10vw)); }
+  .site-header { padding-block: 1.25rem; gap: .875rem .75rem; }
+  .brand-mark { flex: 1 0 7rem; width: auto; margin: 0; }
+  .logo { width: 9rem; }
+  nav { order: 1; flex-basis: 100%; gap: 1.25rem; }
+  .introduction { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; padding-block: 2rem; }
+  .introduction-copy { margin-top: 1.25rem; }
+  .office { padding: min(1.5rem, 6vw); }
+  .office-email { margin-top: .5rem; margin-bottom: 1rem; font-size: 1.375rem; }
+  .office .department-link { padding-top: .75rem; }
+  .company-data { padding: min(1.5rem, 6vw); margin-bottom: 1.75rem; }
+  .company-profile { padding-bottom: 1.25rem; }
+  .company-profile h2 { max-width: 18ch; font-size: 1.75rem; }
+  .company-addresses { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding-top: 1.25rem; }
+  .contacts { margin-bottom: 1.75rem; }
+  .contacts-summary { padding: 1.25rem .25rem; }
+  .contact-list { padding: 0 .25rem 1.5rem; }
+  .people { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .people h4 { font-size: 1.125rem; }
+  .accounting { grid-template-columns: minmax(0, 1fr); gap: .875rem; }
+}
+
+/* Only user actions move. Native disclosure remains usable without these features. */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+  nav a { transition: text-decoration-color 160ms ease; }
+  .theme-animated :is(.theme-symbol, .theme-disc, .theme-cutout, .theme-rays) { transition: transform 420ms cubic-bezier(.2, .7, .2, 1), opacity 200ms ease; }
+  .disclosure-mark::after { transition: transform 320ms ease; }
+  .department-link span { transition: transform 180ms ease; }
+  .department-link:hover span, .department-link:focus-visible span { transform: translateY(3px); }
+  /* Animate real elements: no screenshot overlay can intercept a second click. */
+  .theme-animated :is(body, .site-header, .company-data, .company-addresses, .contacts, .disclosure-mark, .department, .people li, .accounting > div) {
+    transition: background-color 420ms ease, border-color 420ms ease;
+  }
+  /* Interpolate text at its own element, without a second inherited transition. */
+  .theme-animated :is(h1, h2, h3, h4, p, dt, dd, address, a, button) {
+    transition: background-color 420ms ease, color 420ms ease, border-color 420ms ease, text-decoration-color 160ms ease;
+  }
+  .theme-animated .logo { transition: opacity 420ms ease; }
+  @supports (interpolate-size: allow-keywords) and (transition-behavior: allow-discrete) {
+    .contacts { interpolate-size: allow-keywords; }
+    .contacts::details-content { height: 0; overflow: clip; transition: height 360ms cubic-bezier(.2, .7, .2, 1), content-visibility 360ms allow-discrete; }
+    .contacts[open]::details-content { height: auto; }
+  }
+}
